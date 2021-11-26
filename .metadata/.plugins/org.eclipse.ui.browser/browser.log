@@ -1,0 +1,7 @@
+
+Nov 25, 2021 18:08:25.55 NEW SESSION
+Nov 25, 2021 18:08:25.55 [12888:13756:1125/180825.523:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Nov 25, 2021 18:08:25.55 [12888:13756:1125/180825.530:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Nov 25, 2021 18:08:25.55 [12888:13756:1125/180825.530:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Nov 25, 2021 18:08:25.55 [12888:13756:1125/180825.534:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Nov 25, 2021 18:08:25.70 [12888:8120:1125/180825.699:ERROR:device_event_log_impl.cc(214)] [18:08:25.700] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.

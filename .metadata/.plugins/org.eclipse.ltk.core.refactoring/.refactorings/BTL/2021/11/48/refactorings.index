@@ -1,0 +1,8 @@
+1637838304423	Move 'index.xml' to 'WEB-INF'
+1637838314134	Move 'index.xml' to 'webapp'
+1637838333059	Move 'web.xml' to 'WEB-INF'
+1637838953546	Delete element
+1637841748118	Move 'user.jsp' to 'layouts'
+1637841753646	Move 'index.jsp' to 'user'
+1637842415298	Delete element
+1637856929279	Rename package 'DemoSpringMVC.Controller'
