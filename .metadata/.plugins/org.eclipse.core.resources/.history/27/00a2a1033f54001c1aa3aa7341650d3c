@@ -1,0 +1,32 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.HashMap;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.ChiTietHoaDon;
+import MiuMiuShop.Entity.HoaDon;
+import MiuMiuShop.Entity.MapperHoaDon;
+import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
+
+@Repository
+public class HoaDonDao extends BaseDao{
+	public List<HoaDon> GetDataMenu()
+	{
+		List<HoaDon> list = new ArrayList<HoaDon>();
+		String sql = "SELECT * FROM HoaDon";
+		list = _jdbcTemplate.query(sql, new MapperHoaDon());
+		return list;
+	}
+
+	public int TaoHoaDon(int Id, HoaDon hoaDon, HashMap<Integer, ChiTietHoaDon> hoaDon_DanhSachSanPham, ThongTinLienHe_KhachHang thongTinLienHe_KhachHang) {
+		for(Map)
+		
+		
+		String sql = "INSERT INTO HoaDon (TongTien, NgayLapHoaDon, TrangThai, MaLienHe_KhachHang, ID)VALUES ()"
+		return 0;
+	}
+}

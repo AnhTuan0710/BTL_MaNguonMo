@@ -1,0 +1,54 @@
+package MiuMiuShop.Service.User;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dao.LoaiSanPhamDao;
+import MiuMiuShop.Dao.MenuDao;
+import MiuMiuShop.Dao.SanPhamDao;
+import MiuMiuShop.Dao.SlidesDao;
+import MiuMiuShop.Dto.SanPhamDto;
+import MiuMiuShop.Entity.LoaiSanPham;
+import MiuMiuShop.Entity.Menu;
+import MiuMiuShop.Entity.SanPham;
+import MiuMiuShop.Entity.Slides;
+
+@Service
+public class HomeServiceImpl implements IHomeService {
+	@Autowired
+	private SlidesDao slidesDao;
+	@Autowired
+	private LoaiSanPhamDao loaiSanPhamDao;
+	@Autowired
+	private MenuDao menuDao;
+	@Autowired
+	private SanPhamDao sanPhamDao;
+
+	public List<Slides> GetDataSlide() {
+
+		return slidesDao.GetDataSlide();
+	}
+
+	public List<LoaiSanPham> GetDataLoaiSanPham() {
+
+		return loaiSanPhamDao.GetDataLoaiSanPham();
+	}
+
+	public List<Menu> GetDataMenu() {
+
+		return menuDao.GetDataMenu();
+	}
+
+	public List<SanPham> GetDataSanPham() {
+
+		return sanPhamDao.GetDataSanPham();
+	}
+
+	public List<SanPhamDto> GetDataSanPhamDto() {
+		List<SanPhamDto> listSanPhamDto = sanPhamDao.GetDataSanPhamDto();
+		return listSanPhamDto;
+	}
+
+}

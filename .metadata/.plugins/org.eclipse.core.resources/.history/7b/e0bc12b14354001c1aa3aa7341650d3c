@@ -1,0 +1,16 @@
+package MiuMiuShop.Service.User;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Entity.ChiTietHoaDon;
+import MiuMiuShop.Entity.HoaDon;
+import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
+
+@Service
+public interface IHoaDonService {
+	public int TaoHoaDon(int Id, HashMap<Integer, ChiTietHoaDon> hoaDon_DanhSachSanPham, 
+			ThongTinLienHe_KhachHang thongTinLienHe_KhachHang);
+	
+}

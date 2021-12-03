@@ -1,0 +1,26 @@
+1638353679845	Move 'loaisanpham.jsp' to 'SanPham'
+1638354683389	Delete element
+1638378753104	Delete elements
+1638378760689	Delete element
+1638379017928	Rename type 'ISanPham'
+1638379180719	Delete element
+1638379243692	Rename type 'SanPhamService'
+1638409498886	Rename type 'User'
+1638410497083	Delete element
+1638421216455	Delete element
+1638422068699	Delete element
+1638434447545	Rename type 'LoaiSanPhamImpl'
+1638435047020	Rename method 'GetDataAllSanPhamPaginate'
+1638435091062	Rename method 'GetDataAllSanPhamPaginateById'
+1638443229139	Delete element
+1638443255782	Delete element
+1638461757724	Delete element
+1638499243436	Rename type 'ChiTietHoaDonSanPham'
+1638501996564	Rename compilation unit 'ChiTietHoaDonService.java'
+1638504134155	Delete element
+1638533028306	Rename type 'LienHeShop'
+1638546853051	Delete element
+1638547296873	Rename field 'thongTinLienHe_KhachHang'
+1638547975281	Delete element
+1638547984686	Delete element
+1638554803578	Delete element

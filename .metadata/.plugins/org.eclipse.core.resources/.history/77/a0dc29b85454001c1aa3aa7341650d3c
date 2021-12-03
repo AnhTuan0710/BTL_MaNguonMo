@@ -1,0 +1,26 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import MiuMiuShop.Entity.MapperThongTinLienHe_KhachHang;
+import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
+
+public class ThongTinLienHe_KhachHangDao extends BaseDao{
+	public List<ThongTinLienHe_KhachHang> GetDataThongTinLienHe_KhachHang()
+	{
+		List<ThongTinLienHe_KhachHang> list = new ArrayList<ThongTinLienHe_KhachHang>();
+		String sql = "SELECT * FROM ThongTinLienHe_KhachHang";
+		list = _jdbcTemplate.query(sql, new MapperThongTinLienHe_KhachHang());
+		return list;
+	}
+	
+	public int TaoDataThongTinLienHe_KhachHang(int maHoaDon, ThongTinLienHe_KhachHang thongTinLienHe_KhachHang)
+	{
+		String sql = "INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai, MaHoaDon) "
+				+ "VALUES('"+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"+ thongTinLienHe_KhachHang.getSoDienThoai() 
+				+"', " + maHoaDon + ")";
+		int insert = _jdbcTemplate.update(sql);
+		return insert;
+	}
+}

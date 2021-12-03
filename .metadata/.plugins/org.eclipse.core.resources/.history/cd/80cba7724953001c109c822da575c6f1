@@ -1,0 +1,30 @@
+package MiuMiuShop.Dao;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.MapperTaiKhoan;
+import MiuMiuShop.Entity.TaiKhoan;
+
+@Repository
+public class TaiKhoanDao extends BaseDao{
+	public int GetTaiKhoan(TaiKhoan taiKhoan)
+	{
+		TaiKhoan result = new TaiKhoan();
+		String sql = "SELECT * FROM TaiKhoan "
+				+ "WHERE TenDangNhap = '" + taiKhoan.getTenDangNhap() +"' "
+				+ "AND MatKhau = '" + taiKhoan.getMatKhau() + "'";
+		result = _jdbcTemplate.queryForObject(sql, new MapperTaiKhoan());
+		if(result != null)
+		{
+			return 1;
+		}
+		return 0;
+	}
+
+	public int ThemTaiKhoan(TaiKhoan taiKhoan) {
+		String sql = "INSERT INTO TaiKhoan (TenDangNhap, MatKhau) "
+				+ "VALUES('"+ taiKhoan.getTenDangNhap()+ "', '"+ taiKhoan.getMatKhau() +"')";
+		int insert = _jdbcTemplate.update(sql);
+		return insert;
+	}
+}

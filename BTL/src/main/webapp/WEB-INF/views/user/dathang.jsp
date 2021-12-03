@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+<body>
+	<form:form action="dat-hang/xac-nhan" class="form-pay" modelAttribute="thongTinLienHe_KhachHang">
+			<label for="diaChi">Địa chỉ</label>
+			<br/>
+			<form:input type="text" name="diaChi" id="diaChi" path="diaChi"  />
+			<br/>
+			<label for="diaChi">Số điện thoại: </label>
+			<br/>
+			<form:input type="text" name="soDienThoai" id="soDienThoai" path="soDienThoai" />
+			<br/>
+
+
+			<div class="caption-list">Danh sách sản phẩm</div>
+			<div class="list-product">
+				<c:forEach var="item" items="${GioHang }">
+					<div class="prod-item">
+						<div class="prod-name">${item.value.sanPham.tenSanPham}</div>
+						<div class="prod-price">${item.value.soLuong }</div>
+					</div>
+				</c:forEach>
+			</div>
+			
+			<div class="total">Tổng tiền: ${TongTienGioHang }</div>
+			
+
+			<input type="submit" value="Xác nhận đặt">
+
+		</form:form>
+</body>

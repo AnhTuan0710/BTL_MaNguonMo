@@ -1,0 +1,90 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+<head>
+<style>
+.pagination {
+	 display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+	color: black;
+	float: left;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.pagination a.active {
+	background-color: #4CAF50;
+	color: white;
+}
+.pagination
+
+ 
+
+a
+
+
+:hover
+
+
+:not
+
+ 
+
+(
+.active
+
+ 
+
+)
+{
+background-color
+
+
+:
+
+ 
+
+#ddd
+
+
+;
+}
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="content flex-container">
+			<div class="main-content">
+				<div class="category">
+					<div class="container-product flex-container">
+					<h1>${tatCaSanPhamCungLoaiTrong1Trang.size() }</h1>
+						<c:forEach var="item" items="${tatCaSanPhamCungLoaiTrong1Trang }">
+								<a class="item-product" href="https://google.com"> <img
+									class="product-image"
+									src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>"
+									alt="">
+									<div class="product-info">
+										<div class="product-name">${item.tenSanPham }</div>
+										<div class="product-price">
+											<fmt:formatNumber type="number" groupingUsed="true"
+												value="${item.gia}" />
+											VND
+										</div>
+									</div>
+								</a>
+						</c:forEach>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pagination">
+		<a href="#">&laquo;</a> <a href="#">1</a> <a class="active" href="#">2</a>
+		<a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a>
+		<a href="#">&raquo;</a>
+	</div>
+</body>

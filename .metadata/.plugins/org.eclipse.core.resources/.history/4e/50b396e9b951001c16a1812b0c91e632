@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /*mac dinh là 16px*/
+}
+
+.button{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: crimson;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/*---------------------HEADER-----------------------*/
+header{
+    margin: 0px 40px;
+}
+/*--------top----------*/
+.header-top{
+    background-color: cadetblue;
+    margin: auto 16px;
+}
+
+
+.nav-list{
+    list-style: none;
+}
+.nav-list>.nav-item{
+    margin: 0 3px;
+}
+.nav-list>.nav-item>a {
+    text-decoration: none;
+    color: black;
+}
+/*-----------mid------------*/
+.header-mid{
+    background-color: cyan;
+    margin: auto 16px;
+}
+
+.header-mid>.left{
+    flex:1;
+    align-self: center;
+}
+
+.header-mid>.mid{
+    flex:2;
+    align-self: center;
+}
+
+.header-mid>.right{
+    flex:1.3;
+    align-self: center;
+}
+
+/*-----------bottom----------*/
+
+.header-bottom{
+    background-color: rgb(0, 214, 46);
+    margin: auto 16px;
+    padding: 0px 0;
+}
+
+.header-bottom>.left{}
+
+.nav-main{
+
+}
+
+.nav-main>.nav-list{
+
+}
+
+.nav-main>.nav-list>.nav-item{
+    background-color: darkkhaki;
+    margin: 0 0;
+    padding: 15px 15px;
+}
+
+.nav-main>.nav-list>.nav-item:hover{
+    background-color: darkturquoise;
+}
+
+.header-bottom>.right{
+    padding: 15px 15px;
+}
+
+
+
+/*---------------------End-HEADER-----------------------*/
+
+/*---------------------Main-----------------------------*/
+.main{
+    margin: 0px 40px;
+}
+
+.slide-banner{
+    background-color: brown;
+    
+}
+
+.mySlides {
+    display: none;
+}
+
+/*---------content--------*/
+.content{
+
+}
+
+.nav-left{
+    flex: 1;
+    background-color: cadetblue;
+    height: 500px;
+    width: 500px;
+    flex-direction: column;
+}
+
+.danh-muc-san-pham{
+    background-color: rgb(221, 199, 0);
+    height: 90%;
+    width: 100%;
+}
+
+.san-pham-noi-bat{
+    background-color: rgb(94, 235, 0);
+    height: 90%;
+    width: 100%;
+}
+
+.san-pham-khuyen-mai{
+    background-color: rgb(0, 81, 83);
+    height: 90%;
+    width: 100%;
+}
+
+.main-content{
+    flex: 2.5;
+    background-color: coral;
+    height: 500px;
+    width: 500px;
+}
+
+/*-----------------End-Main-----------------------------*/
+
+
+/*-----------footer------------------*/
+footer{
+    margin: 0px 40px;
+}
+
+footer>.info{
+    background-color: cadetblue;
+    height: 500px;
+    width: 500px;
+}
+
+.chinhsach{
+    background-color: rgb(53, 34, 124);
+    height: 500px;
+    width: 500px;
+}
+
+.map{
+    background-color: rgb(103, 13, 121);
+    height: 500px;
+    width: 500px;
+}

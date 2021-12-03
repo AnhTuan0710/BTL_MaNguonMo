@@ -1,0 +1,11 @@
+package MiuMiuShop.Service.User;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class ChiTietHoaDonServiceImpl implements IChiTietHoaDonService{
+	@Autowired
+	private ChiTietHoaDonDao;
+	
+	
+}

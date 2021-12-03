@@ -1,0 +1,27 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.MapperTaiKhoan;
+import MiuMiuShop.Entity.TaiKhoan;
+
+@Repository
+public class TaiKhoanDao extends BaseDao{
+	public List<TaiKhoan> GetDataTaiKhoan()
+	{
+		List<TaiKhoan> list = new ArrayList<TaiKhoan>();
+		String sql = "SELECT * FROM Slides";
+		list = _jdbcTemplate.query(sql, new MapperTaiKhoan());
+		return list;
+	}
+
+	public int ThemTaiKhoan(TaiKhoan taiKhoan) {
+		String sql = "INSERT INTO TaiKhoan (TenDangNhap, MatKhau) "
+				+ "VALUES("+ taiKhoan.getTenDangNhap()+ ", "+ taiKhoan.getMatKhau() +")";
+		int insert = _jdbcTemplate.update(sql);
+		return insert;
+	}
+}

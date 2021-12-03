@@ -1,0 +1,24 @@
+package MiuMiuShop.Service.User;
+
+import java.util.HashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dao.HoaDonDao;
+import MiuMiuShop.Entity.ChiTietHoaDon;
+import MiuMiuShop.Entity.HoaDon;
+import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
+
+@Service
+public class HoaDonServiceImpl implements IHoaDonService{
+
+	@Autowired
+	private HoaDonDao hoaDonDao; 
+	public int TaoHoaDon(int Id, HoaDon hoaDon, HashMap<Integer, ChiTietHoaDon> hoaDon_DanhSachSanPham, 
+			ThongTinLienHe_KhachHang thongTinLienHe_KhachHang) {
+		// TODO Auto-generated method stub
+		return hoaDonDao.TaoHoaDon(Id, hoaDon, hoaDon_DanhSachSanPham, thongTinLienHe_KhachHang);
+	}
+
+}

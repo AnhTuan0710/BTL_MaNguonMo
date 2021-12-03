@@ -1,0 +1,20 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.HoaDon;
+import MiuMiuShop.Entity.MapperHoaDon;
+
+@Repository
+public class HoaDonDao extends BaseDao{
+	public List<HoaDon> GetDataMenu()
+	{
+		List<HoaDon> list = new ArrayList<HoaDon>();
+		String sql = "SELECT * FROM HoaDon";
+		list = _jdbcTemplate.query(sql, new MapperHoaDon());
+		return list;
+	}
+}

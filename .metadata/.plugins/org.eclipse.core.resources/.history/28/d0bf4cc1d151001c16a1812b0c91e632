@@ -1,0 +1,21 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import MiuMiuShop.Entity.LoaiSanPham;
+import MiuMiuShop.Entity.MapperLoaiSanPham;
+
+public class LoaiSanPhamDao {
+public JdbcTemplate _jdbcTemplate;
+	
+	public List<LoaiSanPham> GetDataLoaiSanPham()
+	{
+		List<LoaiSanPham> list = new ArrayList<LoaiSanPham>();
+		String sql = "SELECT * FROM LoaiSanPham";
+		list = _jdbcTemplate.query(sql, new MapperLoaiSanPham());
+		return list;
+	}
+}

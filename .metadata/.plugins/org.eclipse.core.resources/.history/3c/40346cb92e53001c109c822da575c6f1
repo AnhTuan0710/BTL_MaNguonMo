@@ -1,0 +1,12 @@
+package MiuMiuShop.Service.User;
+
+import java.util.List;
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dto.PaginatesDto;
+import MiuMiuShop.Entity.TaiKhoan;
+
+@Service
+public class ITaiKhoanService {
+	public List<TaiKhoan> GetDataTaiKhoan();
+}

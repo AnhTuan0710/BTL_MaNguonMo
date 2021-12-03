@@ -1,0 +1,8 @@
+package MiuMiuShop.Service.User;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public interface ISanPhamService {
+	public List<SanPhamDto> GetSanPhamByID(int id);
+}

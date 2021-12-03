@@ -1,0 +1,7 @@
+package MiuMiuShop.Dto;
+
+public class CartDto {
+	private int soLuong;
+	private int tongTien;
+	
+}

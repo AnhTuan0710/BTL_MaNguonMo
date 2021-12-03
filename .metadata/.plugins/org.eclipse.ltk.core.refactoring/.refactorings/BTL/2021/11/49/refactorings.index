@@ -1,0 +1,36 @@
+1638237679829	Move 'css' to 'user'
+1638238270646	Move 'assets' to 'webapp'
+1638242099994	Delete element
+1638253042162	Rename type 'HomeDao'
+1638253065800	Move compilation unit
+1638253141918	Move compilation unit
+1638253153118	Delete element
+1638253174807	Delete element
+1638253193751	Copy package
+1638253200349	Delete element
+1638253264187	Delete element
+1638253289766	Delete element
+1638253369588	Rename package 'MiuMiuShop.UserController'
+1638253385567	Move compilation unit
+1638253407872	Rename package 'MiuMiuShop.Controller.User'
+1638253452197	Delete element
+1638253486408	Move compilation unit
+1638253506370	Rename package 'MiuMiuShop.Controller.User'
+1638253667028	Move compilation unit
+1638253677332	Delete element
+1638253681445	Move compilation unit
+1638255075623	Move 2 resources to 'slides'
+1638261947234	Delete element
+1638276841451	Delete element
+1638293080517	Rename field 'MaSanPham'
+1638293104116	Rename field 'TenSanPham'
+1638293116795	Rename field 'HinhAnh'
+1638293144231	Rename field 'Gia'
+1638293154959	Rename field 'GiaGiam'
+1638293179271	Rename field 'SoLuongCon'
+1638293192214	Rename field 'MoTa'
+1638293207771	Rename field 'NgayTao'
+1638293225193	Rename field 'NgayCapNhat'
+1638293249389	Rename field 'SanPhamMoi'
+1638293261164	Rename field 'NoiBat'
+1638293275119	Rename field 'MaLoaiSanPham'

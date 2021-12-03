@@ -1,0 +1,24 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.sun.glass.ui.Menu;
+
+import MiuMiuShop.Entity.LoaiSanPham;
+import MiuMiuShop.Entity.MapperLoaiSanPham;
+import MiuMiuShop.Entity.MapperMenu;
+
+
+@Repository
+public class MenuDao extends BaseDao{
+	public List<Menu> GetDataMenu()
+	{
+		List<Menu> list = new ArrayList<Menu>();
+		String sql = "SELECT * FROM Menu";
+		list = _jdbcTemplate.query(sql, new MapperMenu());
+		return list;
+	}
+}

@@ -1,2 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowCallbackHandler"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.Slides"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperSlides"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.HomeDao"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.SlidesDao"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.HomeServiceImpl"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperLoaiSanPham"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.LoaiSanPham"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.LoaiSanPhamDao"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="com.sun.glass.ui.Menu"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperMenu"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.MenuDao"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.Menu"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperSanPham"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.SanPham"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dto.SanPhamDto"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dto.SanPhamDtoMapper"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.IPaginatesService"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.ILoaiSanPhamSevice"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.LoaiSanPhamImpl"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.PaginateServiceImpl"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dto.PaginatesDto"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.ISanPhamService"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.SanPhamDao"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.SanPhamServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Controller.User.BaseController"/>
+<fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.BaseDao"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperTaiKhoan"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.ITaiKhoanService"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Dao.TaiKhoanDao"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.TaiKhoanServiceImpl"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.TaiKhoan"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

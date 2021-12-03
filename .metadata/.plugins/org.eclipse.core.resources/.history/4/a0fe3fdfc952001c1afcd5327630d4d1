@@ -1,0 +1,12 @@
+package MiuMiuShop.Service.User;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dto.SanPhamDto;
+
+@Service
+public interface ISanPhamService {
+	public List<SanPhamDto> GetSanPhamByID(int id);
+}

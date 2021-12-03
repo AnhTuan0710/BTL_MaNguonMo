@@ -1,0 +1,18 @@
+package MiuMiuShop.Service.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dao.HoaDonDao;
+
+@Service
+public class HoaDonServiceImpl implements IHoaDonService{
+
+	@Autowired
+	private HoaDonDao hoaDonDao; 
+	public int TaoHoaDon() {
+		// TODO Auto-generated method stub
+		return hoaDonDao.TaoHoaDon();
+	}
+
+}

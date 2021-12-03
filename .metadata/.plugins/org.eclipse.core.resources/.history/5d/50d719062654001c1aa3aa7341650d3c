@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<footer class="flex-container">
+	<div class="info">
+		<div class="caption">Thông tin liên hệ</div>
+		<div class="info-content">aaaaaa</div>
+	</div>
+	<div class="chinhsach">
+		<div class="caption">Chính sách</div>
+		<div class="info-content">bbbbbb</div>
+	</div>
+	<div class="map">
+		<div class="caption">Địa chỉ</div>
+		<div class="info-content">cccc</div>
+	</div>
+</footer>

@@ -1,0 +1,12 @@
+package MiuMiuShop.Dao;
+
+import MiuMiuShop.Entity.ChiTietHoaDon;
+import java.util.HashMap;
+
+public class ChiTietHoaDonDao extends BaseDao{
+	public ChiTietHoaDon ThemVaoHoaDon(int maSanPham, HashMap<int, ChiTietHoaDon> hoaDon) {
+		ChiTietHoaDon dongHoaDon = new ChiTietHoaDon();
+		
+		return dongHoaDon;
+	}
+}

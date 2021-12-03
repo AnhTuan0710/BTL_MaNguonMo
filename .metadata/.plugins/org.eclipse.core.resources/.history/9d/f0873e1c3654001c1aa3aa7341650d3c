@@ -1,0 +1,16 @@
+package MiuMiuShop.Entity;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class MapperChiTietHoaDon RowMapper<ChiTietHoaDon> {
+
+	public ChiTietHoaDon mapRow(ResultSet rs, int rowNum) throws SQLException {
+		ChiTietHoaDon chiTietHoaDon = new ChiTietHoaDon();
+		chiTietHoaDon.setMaHoaDon(rs.getInt("MaHoaDon"));
+		chiTietHoaDon.setSoLuong(rs.getInt("SoLuong"));
+		return chiTietHoaDon;
+	}
+}

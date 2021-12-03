@@ -1,0 +1,32 @@
+package MiuMiuShop.Service.User;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dao.TaiKhoanDao;
+import MiuMiuShop.Entity.TaiKhoan;
+
+@Service
+public class TaiKhoanServiceImpl implements ITaiKhoanService{
+
+	@Autowired
+	private TaiKhoanDao taiKhoanDao; 
+	
+	public int ThemTaiKhoan(TaiKhoan taiKhoan) {
+		return taiKhoanDao.ThemTaiKhoan(taiKhoan);
+	}
+	
+	public int KiemTraTaiKhoan(TaiKhoan taiKhoan) {
+		TaiKhoan tk = taiKhoanDao.GetTaiKhoan(taiKhoan);
+		if(tk != null)
+		{
+			return 1;
+		}	
+		else
+		{
+			return 0;
+		}
+		
+	}
+
+}

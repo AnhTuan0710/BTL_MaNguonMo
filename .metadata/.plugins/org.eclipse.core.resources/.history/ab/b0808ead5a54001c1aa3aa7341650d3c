@@ -1,0 +1,28 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.MapperThongTinLienHe_KhachHang;
+import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
+
+@Repository
+public class ThongTinLienHe_KhachHangDao extends BaseDao{
+	public List<ThongTinLienHe_KhachHang> GetDataThongTinLienHe_KhachHang()
+	{
+		List<ThongTinLienHe_KhachHang> list = new ArrayList<ThongTinLienHe_KhachHang>();
+		String sql = "SELECT * FROM ThongTinLienHe_KhachHang";
+		list = _jdbcTemplate.query(sql, new MapperThongTinLienHe_KhachHang());
+		return list;
+	}
+	
+	public int TaoDataThongTinLienHe_KhachHang(ThongTinLienHe_KhachHang thongTinLienHe_KhachHang)
+	{
+		String sql = "INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai) "
+				+ "VALUES('"+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"+ thongTinLienHe_KhachHang.getSoDienThoai() +"')";
+		int insert = _jdbcTemplate.update(sql);
+		return insert;
+	}
+}

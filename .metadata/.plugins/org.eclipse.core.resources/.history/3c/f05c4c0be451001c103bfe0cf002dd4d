@@ -1,0 +1,22 @@
+package MiuMiuShop.Entity;
+
+public class LoaiSanPham {
+	private int maSanPham;
+	private String tenSanPham;
+	public LoaiSanPham() {
+		super();
+	}
+	public int getMaSanPham() {
+		return maSanPham;
+	}
+	public void setMaSanPham(int maSanPham) {
+		this.maSanPham = maSanPham;
+	}
+	public String getTenSanPham() {
+		return tenSanPham;
+	}
+	public void setTenSanPham(String tenSanPham) {
+		this.tenSanPham = tenSanPham;
+	}
+	
+}

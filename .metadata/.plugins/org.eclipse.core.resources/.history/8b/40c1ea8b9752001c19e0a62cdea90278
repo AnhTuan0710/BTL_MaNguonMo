@@ -1,0 +1,10 @@
+package MiuMiuShop.Service.User;
+
+import MiuMiuShop.Dto.PaginatesDto;
+
+public class PaginateServiceImpl {
+	public PaginatesDto GetInfoPaginates(){
+		PaginatesDto paginate = new PaginatesDto();
+		return paginate;
+	}
+}

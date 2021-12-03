@@ -1,0 +1,97 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+<header>
+	<div class="header-top flex-container">
+		<div class="left">
+			<p>Nguyên liệu nấu ăn cho mọi nhà</p>
+		</div>
+		<div class="right">
+			<ul class="nav-list flex-container">
+				<li class="item-nav"><a href="">Lien he</a></li>
+				<li class="item-nav"><a href="">Lien he</a></li>
+				<li class="item-nav"><a href="">Lien he</a></li>
+				<li class="item-nav"><a href="">Lien he</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header-mid flex-container">
+		<div class="left">
+			<img width="220" height="100"
+				src="http://nguyenlieunauan.khoweb24h.com/wp-content/uploads/2020/04/logo.png"
+				class="header_logo header-logo" alt="Web Nguyên Liệu Nấu Ăn" />
+		</div>
+		<div class="mid">
+			<input type="text" name="TextSearch" id="TextSearch"
+				style="width: 70%;" />
+			<div class="button button-search">Tìm kiếm</div>
+		</div>
+		<div class="right">
+			<div class="button"  onclick="popUp_()">Đăng nhập / Đăng ký</div>
+			<div class="button">Giỏ hàng</div>
+		</div>
+	</div>
+
+	<div class="header-bottom flex-container">
+		<div class="left nav-main">
+			<ul class="nav-list flex-container">
+				<c:forEach var="item" items="${menu }" varStatus="index">
+					<c:if test="${index.first }">
+						<li class="item-nav active">
+					</c:if>
+					<c:if test="${not index.first }">
+						<li class="item-nav">
+					</c:if>
+					<a href="">${item.tenDanhMuc}</a>
+					</li>
+				</c:forEach>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="infor">Sdt: 03154841452855</div>
+		</div>
+	</div>
+
+
+
+	<!-- Login Signup -->
+
+	<div class="login-signup-background" id="login-signup-background">
+		<div class="close-button" onclick="close_()">&times</div>
+		<div class="login"></div>
+		<div class="signup">
+			<table>
+				<tr>
+					<td><label for="Username">Tài khoản:</label></td>
+					<td><input type="text" name="Username" id="Username">
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Password">Mật khẩu:</label></td>
+					<td><input type="text" name="Password" id="Password">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<button type="submit" class="button-signup">Đăng ký</button>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+	</div>
+
+	<script>
+		function close_() {
+			var a = document.getElementById("login-signup-background");
+			a.style.display = "none";
+		}
+
+		function popUp_() {
+			var a = document.getElementById("login-signup-background");
+			a.style.display = "block";
+		}
+	</script>
+</header>

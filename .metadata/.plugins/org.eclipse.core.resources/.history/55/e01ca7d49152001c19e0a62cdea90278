@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+<body>
+	<div class="nav-left">
+		<div class="danh-muc-san-pham">
+			<div class="caption">Danh mục sản phẩm</div>
+			<div class="container-loaisanpham">
+				<c:forEach var="item" items="${loaiSanPham}">
+					<div class="item-loai-san-pham">
+						<a href="<c:url value='/loai-san-pham/${item.maLoaiSanPham}'/>">${item.tenLoaiSanPham}</a>
+					</div>
+
+				</c:forEach>
+			</div>
+		</div>
+		<div class="san-pham-noi-bat">
+			<div class="caption">Sản phẩm nổi bật</div>
+			<div class="container-loaisanpham">
+				<div class="item-loai-san-pham">
+					<a href="">Đồ ăn nhanh</a>
+				</div>
+				<div class="item-loai-san-pham">Đồ uống</div>
+				<div class="item-loai-san-pham">Đồ cơm</div>
+			</div>
+		</div>
+		<div class="san-pham-moi">
+			<div class="caption">Sản phẩm mới</div>
+			<div class="container-loaisanpham">
+				<div class="item-loai-san-pham">
+					<a href="">Đồ ăn nhanh</a>
+				</div>
+				<div class="item-loai-san-pham">Đồ uống</div>
+				<div class="item-loai-san-pham">Đồ cơm</div>
+			</div>
+		</div>
+	</div>
+</body>

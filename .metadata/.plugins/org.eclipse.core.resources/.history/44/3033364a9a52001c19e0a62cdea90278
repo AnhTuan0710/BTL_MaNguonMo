@@ -1,0 +1,12 @@
+package MiuMiuShop.Service.User;
+
+import org.springframework.stereotype.Service;
+
+import MiuMiuShop.Dto.PaginatesDto;
+@Service
+public class PaginateServiceImpl {
+	public PaginatesDto GetInfoPaginates(){
+		PaginatesDto paginate = new PaginatesDto();
+		return paginate;
+	}
+}

@@ -1,0 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<header>
+	<div class="header-top flex-container">
+		<div class="left">
+			<p>Nguyên liệu nấu ăn cho mọi nhà</p>
+		</div>
+		<div class="right">
+			<ul class="nav-list flex-container">
+				<li class="nav-item"><a href="">Lien he</a></li>
+				<li class="nav-item"><a href="">Lien he</a></li>
+				<li class="nav-item"><a href="">Lien he</a></li>
+				<li class="nav-item"><a href="">Lien he</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="header-mid flex-container">
+		<div class="left">
+			<img width="220" height="100"
+				src="http://nguyenlieunauan.khoweb24h.com/wp-content/uploads/2020/04/logo.png"
+				class="header_logo header-logo" alt="Web Nguyên Liệu Nấu Ăn" />
+		</div>
+		<div class="mid">
+			<input type="text" name="TextSearch" id="TextSearch"
+				style="width: 70%;" />
+			<div class="button button-search">Tìm kiếm</div>
+		</div>
+		<div class="right">
+			<div class="button">Đăng nhập / Đăng ký</div>
+			<div class="button">Giỏ hàng</div>
+		</div>
+	</div>
+
+	<div class="header-bottom flex-container">
+		<div class="left nav-main">
+			<ul class="nav-list flex-container">
+				<h1>${menu.size()}</h1>
+				<li class="nav-item"><a href="">Trang chủ</a></li>
+				<li class="nav-item"><a href="">aaaaaaa</a></li>
+				<li class="nav-item"><a href="">aaaaaaa</a></li>
+				<li class="nav-item"><a href="">aaaaaaa</a></li>
+				<li class="nav-item"><a href="">aaaaaaa</a></li>
+				<li class="nav-item"><a href="">aaaaaaa</a></li>
+			</ul>
+		</div>
+		<div class="right">
+			<div class="infor">Sdt: 03154841452855</div>
+		</div>
+	</div>
+</header>

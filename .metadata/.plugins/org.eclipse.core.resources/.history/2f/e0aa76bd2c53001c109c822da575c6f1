@@ -1,0 +1,16 @@
+package MiuMiuShop.Controller.User;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class TaiKhoanController extends BaseController{
+	@RequestMapping(value="dang-ky", method = RequestMethod.GET)
+	public ModelAndView DangKy()
+	{
+		_mvShare.setViewName("user/taikhoan/dangky");
+		return _mvShare;
+	}
+}

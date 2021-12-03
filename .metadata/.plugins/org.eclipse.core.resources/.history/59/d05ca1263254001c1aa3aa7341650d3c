@@ -1,0 +1,21 @@
+package MiuMiuShop.Dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import MiuMiuShop.Entity.LoaiSanPham;
+import MiuMiuShop.Entity.MapperLoaiSanPham;
+
+@Repository
+public class ThongTinLienHeShopDao extends BaseDao{
+
+	public List<ThongTinLienHeShopDao> GetDataLoaiSanPham()
+	{
+		List<ThongTinLienHeShopDao> list = new ArrayList<ThongTinLienHeShopDao>();
+		String sql = "SELECT * FROM LoaiSanPham";
+		list = _jdbcTemplate.query(sql, new MapperThongTinLienHeShopDao());
+		return list.get(0);
+	}
+}

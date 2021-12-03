@@ -1,0 +1,20 @@
+package MiuMiuShop.Controller.User;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class HomeController extends BaseController {
+	
+	@RequestMapping(value = {"/", "trang-chu"}, method = RequestMethod.GET)
+	public ModelAndView Index()
+	{
+		ModelAndView mv = new ModelAndView("user/index");
+		mv.addObject("menu", _homeService.GetDataMenu());
+		mv.addObject("slides", _homeService.GetDataSlide());
+		mv.addObject("loaiSanPham", _homeService.GetDataLoaiSanPham());
+		return mv;
+	}
+}

@@ -1,0 +1,63 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+
+<body>
+	<div class="main">
+        <div class="slide-banner">
+            <div class="container-display-slides">
+            	<c:forEach var="item" items="${slides }" varStatus="index">
+            		<c:if test="${index.first }">
+            			<div class="item-slide active">
+            		</c:if>
+            		<c:if test="${not index.first }">
+            			<div class="item-slide">
+            		</c:if>
+            				<div class="content">${item.tenSlide} <br/> ${item.noiDung}</div>
+            				<img src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>">
+            			</div>
+            	</c:forEach>
+
+            </div>
+            <div class="control-button">
+                <button class="button-prev" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-next" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="content flex-container">
+            <div class="nav-left flex-container">
+                <div class="danh-muc-san-pham">
+                    <div class="caption">Danh mục sản phẩm</div>
+                    <div class="container-loaisanpham">
+                    	<c:forEach  var="item" items="${loaiSanPham}">
+                    		<div class="item-loai-san-pham"><a href="/san-pham/${item.maLoaiSanPham }">${item.tenLoaiSanPham}</a></div>
+                    	</c:forEach>
+                    </div>
+                </div>
+                <div class="san-pham-noi-bat"></div>
+                <div class="san-pham-khuyen-mai"></div>
+            </div>
+            <div class="main-content">
+            	<div class="category">
+	            	<c:forEach var="loaiSanPham" items="${loaiSanPham }">
+	                    <div class="caption">${loaiSanPham.tenLoaiSanPham }</div>
+	                    <div class="container-product flex-container">
+	                    	<c:forEach var="item" items="${sanPham }">
+	                    		<c:if test="${sanPham.maLoaiSanPham = loaiSanPham.maLoaiSanPham }">
+	                    			<div class="item-product">
+			                            <img class="product-image" src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>" alt="">
+			                            <div class="product-name">${item.tenSanPham }</div>
+		                           		 <div class="product-price">${item.gia }</div>
+	                        		</div>
+	                    		</c:if>
+	                    	</c:forEach>
+	                    </div>
+					</c:forEach>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	<script type="text/javascript" src="<c:url value="/assets/user/js/script_slides.js"/>"></script>
+	
+</body>
