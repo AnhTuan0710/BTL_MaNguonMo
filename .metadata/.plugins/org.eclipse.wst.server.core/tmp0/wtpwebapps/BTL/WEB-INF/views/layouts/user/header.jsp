@@ -59,7 +59,10 @@
 			</ul>
 		</div>
 		<div class="right">
-			<div class="button" onclick="open_cart()">Giỏ hàng(${TongSanPhamGioHang })</div>
+			<div class="button" onclick="open_cart()">Giỏ hàng(					
+					<c:if test="${ not empty TongSanPhamGioHang }">${TongSanPhamGioHang }</c:if>
+					<c:if test="${ empty TongSanPhamGioHang }">0</c:if>
+				)</div>
 		</div>
 	</div>
 
@@ -84,7 +87,9 @@
 			<c:if test="${not empty TongTienGioHang }">
 				<label for="total-money">Tổng tiền: ${TongTienGioHang }</label>
 			</c:if> --%>
-			<label for="total-money">Tổng tiền: ${TongTienGioHang } VND</label>
+			<label for="total-money">Tổng tiền: 
+					<c:if test="${ not empty TongTienGioHang }">${TongSanPhamGioHang }</c:if>
+					<c:if test="${ empty TongTienGioHang }">0</c:if> VND</label>
 			<div class="pay-submit button">
 				<a href="<c:url value='/dat-hang'/>">Đặt ngay</a>
 			</div>

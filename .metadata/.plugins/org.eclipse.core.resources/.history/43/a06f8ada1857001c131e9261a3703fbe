@@ -1,0 +1,35 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+
+<body>
+	<header>
+        <div class="caption">
+            Adminitator
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="<c:url value='/admin/danh-sach-hoa-don'/>">Quản lý đơn hàng</a></li>
+                <li><a href="<c:url value='/admin/danh-sach-slide'/>">Quản lý slide-banner</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div style="text-align: center;">Chi tiết slide</div>
+            
+            <div>Mã slide: ${ThongTinHoaDon.maHoaDon }</div>
+            <div>Trạng thái: ${ThongTinHoaDon.ngayLapHoaDon }</div>
+            <div>Tiêu đề: ${ThongTinHoaDon.hoTen }</div>
+            <div>Nội dung: ${ThongTinHoaDon.soDienThoai }</div>
+            <div>Hình ảnh: ${ThongTinHoaDon.trangThai }</div>
+            <div>Link: ${ThongTinHoaDon.diaChi }</div>
+            
+            <a href="<c:url value='/admin/chi-tiet-slide/${ ThongTinHoaDon.maHoaDon}/xac-nhan'/>">Chỉnh sửa</a>
+            <a href="<c:url value='/admin/chi-tiet-slide/${ ThongTinHoaDon.maHoaDon}/huy'/>">Xóa</a>
+        </div>
+    </main>
+</body>

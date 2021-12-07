@@ -1,0 +1,93 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+
+<body>
+	<div class="content">
+		<div style="text-align: center;">Chỉnh sửa slide</div>
+		<form:form action="chinh-sua/luu" modelAttribute="slide">
+			<table>
+			
+			<div>Mã sản phẩm: ${SanPham.maSanPham }</div>
+		<div>Tên sản phẩm: ${SanPham.tenSanPham }</div>
+		<div>Hình ảnh: ${SanPham.hinhAnh }</div>
+		<div>Giá: ${SanPham.gia }</div>
+		<div>Mô tả: ${SanPham.moTa }</div>
+		<div>Ngày tạo: ${SanPham.ngayTao }</div>
+		<div>Ngày cập nhật: ${SanPham.ngayCapNhat }</div>
+		<div>Sản phẩm nổi bật: 
+			<c:if test="${SanPham.noiBat == 'false'}">Không</c:if>
+			<c:if test="${SanPham.noiBat == 'true'}">Có</c:if>
+		</div>
+		<div>Sản phẩm mới: 
+			<c:if test="${SanPham.sanPhamMoi == 'false'}">Không</c:if>
+			<c:if test="${SanPham.sanPhamMoi == 'true'}">Có</c:if></div>
+		<div>Loại sản phẩm: ${SanPham.tenLoaiSanPham }</div>
+			
+			
+				<tr>
+					<td>Mã sản phẩm:</td>
+					<td>${SanPham.maSanPham }</td>
+				</tr>
+				<tr>
+					<td>Tên sản phẩm:</td>
+					<td><form:input value=" ${SanPham.tenSanPham }"
+							path="tenSanPham" /></td>
+				</tr>
+				<tr>
+					<td>Hình ảnh:</td>
+					<td><form:input value="${SanPham.hinhAnh }"
+							path="hinhAnh" /></td>
+				</tr>
+				<tr>
+					<td>Giá:</td>
+					<td><form:input value="${SanPham.gia }"
+							path="gia" /></td>
+				</tr>
+				<tr>
+					<td>Ngày tạo:</td>
+					<td>${SanPham.ngayTao }</td>
+				</tr>
+				<tr>
+					<td>Ngày cập nhật: </td>
+					<td>${SanPham.ngayCapNhat }</td>
+				</tr>
+				
+				<tr>
+					<td>Sản phẩm nổi bật:</td>
+					<td>
+						<form:select path="noiBat">
+							<form:option value="1">Có</form:option>
+							<form:option value="0">Không</form:option>
+						</form:select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Sản phẩm mới: </td>
+					<td>
+						<form:select path="sanPhamMoi">
+							<form:option value="1">Có</form:option>
+							<form:option value="0">Không</form:option>
+						</form:select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>Loại sản phẩm: </td>
+					<td>
+						<form:select path="loaiSanPham">
+							<c:forEach var="item" items="${DanhSachLoaiSanPham }">
+								<form:option value="${item.maLoaiSanPham }">${item.tenLoaiSanPham }</form:option>
+							</c:forEach>
+							<form:option value="1">Có</form:option>
+							<form:option value="0">Không</form:option>
+						</form:select>
+					</td>
+				</tr>
+
+			</table>
+			<form:button type="submit">Lưu</form:button>
+		</form:form>
+	</div>
+</body>

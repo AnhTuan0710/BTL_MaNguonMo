@@ -43,4 +43,38 @@ public class TaiKhoanDao extends BaseDao{
 		}
 		return result.get(0).getId();
 	}
+
+	public List<TaiKhoan> GetDataTaiKhoan() {
+		// TODO Auto-generated method stub
+		List<TaiKhoan> list = new ArrayList<TaiKhoan>();
+		String sql = "SELECT * FROM TaiKhoan ";
+		list = _jdbcTemplate.query(sql, new MapperTaiKhoan());
+		return list;
+	}
+	
+	
+	public int XoaTaiKhoan(int id) {
+		// TODO Auto-generated method stub
+		String sql = "DELETE FROM TaiKhoan "
+				+ "WHERE Id = " + id;
+		int check = _jdbcTemplate.update(sql);
+		return check;
+	}
+	
+	public int SuaTaiKhoan(int id, TaiKhoan taiKhoan) {
+		// TODO Auto-generated method stub
+		String sql = "UPDATE TaiKhoan SET TenDangNhap = '" + taiKhoan.getTenDangNhap()+"', MatKhau = '" + taiKhoan.getMatKhau() +"' "
+				+ "WHERE Id = " + id;
+		int check = _jdbcTemplate.update(sql);
+		return check;
+	}
+
+	public TaiKhoan GetDataTaiKhoanById(int id) {
+		// TODO Auto-generated method stub
+		List<TaiKhoan> list = new ArrayList<TaiKhoan>();
+		String sql = "SELECT * FROM TaiKhoan "
+				+ "WHERE Id = " + id;
+		list = _jdbcTemplate.query(sql, new MapperTaiKhoan());
+		return list.get(0);
+	}
 }

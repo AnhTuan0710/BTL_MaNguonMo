@@ -13,6 +13,9 @@
 			<form:form action="dang-ky" modelAttribute="taiKhoan" method="POST">
 				<table>
 					<tr>
+	                    <th colspan="2">Đăng ký</th>
+	                </tr>
+					<tr>
 						<td><label for="Username">Tài khoản:</label></td>
 						<td><form:input type="text" name="Username" id="Username"
 								path="tenDangNhap" /></td>
@@ -34,6 +37,10 @@
 			<form:form action="dang-nhap" modelAttribute="taiKhoan" method="POST">
 				<table>
 					<tr>
+	                    <th colspan="2">Đăng nhập</th>
+	                </tr>
+	                <div style="color:red">${statusLogin }</div>
+					<tr>
 						<td><label for="Username">Tài khoản:</label></td>
 						<td><form:input type="text" name="Username" id="Username"
 								path="tenDangNhap" /></td>
@@ -46,12 +53,11 @@
 					<tr>
 						<td colspan="2">
 							<button type="submit" class="button-signup">Đăng nhập</button>
-							<span id="btnDangNhap">Đang nappafiad</span>
+							<!-- <span onclick="dangNhap()">aaaaaaaaaaaaa</span> -->
 						</td>
 					</tr>
 				</table>
 			</form:form>
 		</div>
-		<h1>${statusLogin }</h1>
 	</div>
 </body>

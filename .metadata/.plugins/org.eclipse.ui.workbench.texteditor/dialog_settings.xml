@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=".pagination"/>
+		<item key="selection" value="slides"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="sanPham_loaiSanPham"/>
+			<item value="slides"/>
+			<item value="if"/>
+			<item value="ì"/>
+			<item value="form"/>
+			<item value="hoaDon"/>
+			<item value="&lt;input type=&quot;number&quot; name=&quot;quantity&quot; id=&quot;quantity&quot; min=&quot;1&quot;"/>
+			<item value="image"/>
 			<item value=".pagination"/>
 			<item value=".pagination {"/>
 			<item value="just"/>
 			<item value="justconten"/>
 			<item value="href"/>
 			<item value="nav-item"/>
-			<item value="currentDiv"/>
-			<item value="section_264919326"/>
 		</list>
 		<list key="replacehistory">
+			<item value="form:form"/>
 			<item value="item-nav"/>
 		</list>
 	</section>

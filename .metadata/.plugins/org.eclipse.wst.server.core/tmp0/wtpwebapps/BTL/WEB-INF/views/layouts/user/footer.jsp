@@ -20,5 +20,6 @@
 	
 	<script type="text/javascript" src="<c:url value="/assets/user/js/script_slides.js"/>"></script>
 	<script type="text/javascript" src="<c:url value="/assets/user/js/script_cart.js"/>"></script>
-	<script type="text/javascript" src="<c:url value="/assets/user/js/custom.js"/>"></script>
+	<%-- <script type="text/javascript" src="<c:url value="/assets/user/js/custom.js"/>"></script> --%>
+	
 </footer>

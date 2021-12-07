@@ -2,6 +2,7 @@ package MiuMiuShop.Entity;
 
 public class ThongTinLienHe_KhachHang {
 	private int maThongTinLienHe_KhachHang;
+	private String hoTen;
 	private String diaChi;
 	private String soDienThoai;
 	public ThongTinLienHe_KhachHang() {
@@ -24,5 +25,11 @@ public class ThongTinLienHe_KhachHang {
 	}
 	public void setSoDienThoai(String soDienThoai) {
 		this.soDienThoai = soDienThoai;
+	}
+	public String getHoTen() {
+		return hoTen;
+	}
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
 	}
 }

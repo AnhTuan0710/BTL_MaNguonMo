@@ -47,3 +47,46 @@ Dec 04, 2021 01:03:36.88 [9132:9856:1204/010336.563:ERROR:chrome_browser_main_ex
 Dec 04, 2021 01:03:36.88 [9132:9856:1204/010336.563:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
 Dec 04, 2021 01:03:36.88 [9132:9856:1204/010336.566:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
 Dec 04, 2021 01:03:41.07 [9132:12492:1204/010341.078:ERROR:device_event_log_impl.cc(214)] [01:03:41.078] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+
+Dec 06, 2021 24:17:12.51 NEW SESSION
+Dec 06, 2021 24:17:12.52 [3828:9504:1206/001710.910:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 06, 2021 24:17:12.54 [3828:9504:1206/001710.911:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 06, 2021 24:17:12.54 [3828:9504:1206/001710.911:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 06, 2021 24:17:12.54 [3828:9504:1206/001711.390:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 06, 2021 24:17:12.54 [3828:12588:1206/001711.653:ERROR:device_event_log_impl.cc(214)] [00:17:11.641] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+
+Dec 07, 2021 08:27:31.75 NEW SESSION
+Dec 07, 2021 08:27:31.75 [17064:16880:1207/082731.748:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 07, 2021 08:27:31.77 [17064:16880:1207/082731.748:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 07, 2021 08:27:31.77 [17064:16880:1207/082731.748:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 07, 2021 08:27:31.78 [17064:16880:1207/082731.782:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 07, 2021 08:27:33.97 [17064:17284:1207/082733.975:ERROR:device_event_log_impl.cc(214)] [08:27:33.975] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+Dec 07, 2021 08:33:14.85 [15240:12060:1207/083314.850:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 07, 2021 08:33:14.87 [15240:12060:1207/083314.854:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 07, 2021 08:33:14.87 [15240:12060:1207/083314.854:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 07, 2021 08:33:14.87 [15240:12060:1207/083314.858:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 07, 2021 08:33:14.97 [15240:3340:1207/083314.971:ERROR:device_event_log_impl.cc(214)] [08:33:14.971] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+Dec 07, 2021 08:38:55.46 [7548:12192:1207/083855.461:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 07, 2021 08:38:55.49 [7548:12192:1207/083855.461:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 07, 2021 08:38:55.49 [7548:12192:1207/083855.461:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 07, 2021 08:38:55.49 [7548:1060:1207/083855.493:ERROR:device_event_log_impl.cc(214)] [08:38:55.493] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+Dec 07, 2021 08:38:55.49 [7548:12192:1207/083855.495:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 07, 2021 09:01:41.10 [7548:1060:1207/090141.075:ERROR:interface_endpoint_client.cc(658)] Message 5 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 10:23:21.29 [7660:15464:1207/102321.294:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 07, 2021 10:23:21.35 [7660:15464:1207/102321.297:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 07, 2021 10:23:21.35 [7660:15464:1207/102321.297:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 07, 2021 10:23:21.35 [7660:15464:1207/102321.299:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 07, 2021 10:23:21.81 [7660:16300:1207/102321.812:ERROR:device_event_log_impl.cc(214)] [10:23:21.812] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.
+Dec 07, 2021 17:14:54.51 [7660:16300:1207/171454.513:ERROR:interface_endpoint_client.cc(658)] Message 5 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 17:36:42.28 [7660:16300:1207/173642.282:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:41:39.61 [7660:16300:1207/174139.610:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:41:51.24 [7660:16300:1207/174151.243:ERROR:interface_endpoint_client.cc(658)] Message 0 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 17:41:51.24 [7660:16300:1207/174151.246:ERROR:interface_endpoint_client.cc(658)] Message 1 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 17:41:51.24 [7660:16300:1207/174151.246:ERROR:interface_endpoint_client.cc(658)] Message 1 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 17:43:37.97 [7660:16300:1207/174337.972:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:43:40.42 [7660:16300:1207/174340.425:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:45:32.28 [7660:16300:1207/174532.280:ERROR:interface_endpoint_client.cc(658)] Message 5 rejected by interface blink.mojom.WidgetHost
+Dec 07, 2021 17:50:37.66 [7660:16300:1207/175037.668:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:50:46.75 [7660:16300:1207/175046.757:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:50:53.11 [7660:16300:1207/175053.116:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+Dec 07, 2021 17:51:33.56 [7660:16300:1207/175132.719:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.

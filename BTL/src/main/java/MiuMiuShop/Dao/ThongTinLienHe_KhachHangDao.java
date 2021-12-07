@@ -26,16 +26,10 @@ public class ThongTinLienHe_KhachHangDao extends BaseDao{
 	
 	public int TaoDataThongTinLienHe_KhachHang(ThongTinLienHe_KhachHang thongTinLienHe_KhachHang)
 	{
-		/*
-		 * String sql = "INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai) " +
-		 * "VALUES('"+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"+
-		 * thongTinLienHe_KhachHang.getSoDienThoai() +"')"; thongTinLienHe_KhachHang =
-		 * _jdbcTemplate.update(sql, new MapperThongTinLienHe_KhachHang());
-		 * 
-		 * return thongTinLienHe_KhachHang;
-		 */
-		final String insertIntoSql = "INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai) "
-				+ "VALUES('"+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"+ thongTinLienHe_KhachHang.getSoDienThoai() +"')";
+		final String insertIntoSql = "INSERT INTO ThongTinLienHe_KhachHang (HoTen, DiaChi, SoDienThoai) "
+				+ "VALUES('"+ thongTinLienHe_KhachHang.getHoTen() +"', '"
+				+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"
+				+ thongTinLienHe_KhachHang.getSoDienThoai() +"')";
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 
 		_jdbcTemplate.update(

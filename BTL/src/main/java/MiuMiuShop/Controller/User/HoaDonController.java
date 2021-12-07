@@ -68,6 +68,10 @@ public class HoaDonController extends BaseController{
 		
 		hoaDonService.TaoHoaDon(nguoiDung.getId(), hoaDon, maThongTinLienHe_KhachHang);
 		
+		session.removeAttribute("GioHang");
+		session.removeAttribute("TongSanPhamGioHang");
+		session.removeAttribute("TongTienGioHang");
+		
 		_mvShare.setViewName("redirect:/trang-chu");
 		return _mvShare;
 	}

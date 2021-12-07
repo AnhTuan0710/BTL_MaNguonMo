@@ -18,4 +18,12 @@ public class ThongTinLienHeShopDao extends BaseDao{
 		list = _jdbcTemplate.query(sql, new MapperThongTinLienHeShop());
 		return list.get(0);
 	}
+
+	public int SuaThongTinLienHeShop(ThongTinLienHeShop thongTinLienHeShop) {
+		// TODO Auto-generated method stub
+		String sql = "UPDATE ThongTinLienHeShop SET DiaChi = N'" + thongTinLienHeShop.getDiaChi() 
+		+"', SoDienThoai = '"+ thongTinLienHeShop.getSoDienThoai()+"', TenShop = N'" + thongTinLienHeShop.getTenShop()+"'";  
+		int check = _jdbcTemplate.update(sql);
+		return check;
+	}
 }

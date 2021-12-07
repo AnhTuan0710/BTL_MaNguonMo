@@ -8,14 +8,14 @@
             <div class="container-display-slides">
             	<c:forEach var="item" items="${slides }" varStatus="index">
             		<c:if test="${index.first }">
-            			<div class="item-slide active">
+            			<a class="item-slide active" href="google.com">
             		</c:if>
-            		<c:if test="${not index.first }">
-            			<div class="item-slide">
+            		<c:if test="${not index.first }" >
+            			<a class="item-slide" href="google.com">
             		</c:if>
             				<div class="content">${item.tenSlide} <br/> ${item.noiDung}</div>
             				<img src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>">
-            			</div>
+            			</a>
             	</c:forEach>
 
             </div>
@@ -30,38 +30,40 @@
                     <div class="caption">Danh mục sản phẩm</div>
                     <div class="container-loaisanpham">
                     	<c:forEach  var="item" items="${loaiSanPham}">
-                    		<div class="item-loai-san-pham"><a href="<c:url value='/loai-san-pham/${item.maLoaiSanPham}'/>">${item.tenLoaiSanPham}</a></div>
-                    		
+                    		<div class="item-loai-san-pham">
+                    			<a href="<c:url value='/loai-san-pham/${item.maLoaiSanPham}'/>">${item.tenLoaiSanPham}</a>
+                    		</div>
                     	</c:forEach>
                     </div>
                 </div>
                 <div class="san-pham-noi-bat">
                     <div class="caption">Sản phẩm nổi bật</div>
                     <div class="container-loaisanpham">
-                        <div class="item-loai-san-pham"><a href="">Đồ ăn nhanh</a></div>
-                        <div class="item-loai-san-pham">Đồ uống</div>
-                        <div class="item-loai-san-pham">Đồ cơm</div>
+                    	<c:forEach var="item" items="${sanPhamNoiBat }">
+                    		 <div class="item-loai-san-pham"><a href="<c:url value='chi-tiet-san-pham/${item.maSanPham }'/>">${item.tenSanPham }</a></div>
+                    	</c:forEach>
                     </div>
                 </div>
                 <div class="san-pham-moi">
                     <div class="caption">Sản phẩm mới</div>
                     <div class="container-loaisanpham">
-                        <div class="item-loai-san-pham"><a href="">Đồ ăn nhanh</a></div>
-                        <div class="item-loai-san-pham">Đồ uống</div>
-                        <div class="item-loai-san-pham">Đồ cơm</div>
+                    	<c:forEach var="item" items="${sanPhamMoi }">
+                    		 <div class="item-loai-san-pham"><a href="<c:url value='chi-tiet-san-pham/${item.maSanPham }'/>">${item.tenSanPham }</a></div>
+                    	</c:forEach>
                     </div>
                 </div>
             </div>
             <div class="main-content">
             	<div class="category">
 	            	<c:forEach var="loaiSanPham" items="${loaiSanPham }">
+	            		<c:set var="dem" scope = "session" value = "${1}"></c:set>
 	            		<div class="caption">
 	                        <div class="text">${loaiSanPham.tenLoaiSanPham }</div>
-	                        <a class="button view-more" href="">Xem tất cả</a>
+	                        <a class="button view-more" href="<c:url value='loai-san-pham/${loaiSanPham.maLoaiSanPham }'/>">Xem tất cả</a>
                     	</div>
 	                    <div class="container-product flex-container">
 	                    	<c:forEach var="item" items="${sanPham }">
-	                    		<c:if test="${item.maLoaiSanPham == loaiSanPham.maLoaiSanPham }">
+	                    		<c:if test="${item.maLoaiSanPham == loaiSanPham.maLoaiSanPham  && dem <=6}">
 	                    			<div class="item-product">
 										<a href="<c:url value='/chi-tiet-san-pham/${item.maSanPham }'/>" class="product-image-a" ><img class="product-image" src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>" alt=""></a>
 										<div class="product-info">
@@ -70,6 +72,7 @@
 										</div>
 										<a class="add-cart button" href="<c:url value='/ThemSanPham/${item.maSanPham }'/>">+</a>
 									</div>
+									<c:set var="dem" scope = "session" value = "${dem + 1}"></c:set>
 	                    		</c:if>
 	                    	</c:forEach>
 	                    </div>

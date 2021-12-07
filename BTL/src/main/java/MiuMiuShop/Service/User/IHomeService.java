@@ -2,7 +2,6 @@ package MiuMiuShop.Service.User;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import MiuMiuShop.Dto.SanPhamDto;
@@ -10,19 +9,23 @@ import MiuMiuShop.Entity.LoaiSanPham;
 import MiuMiuShop.Entity.Menu;
 import MiuMiuShop.Entity.SanPham;
 import MiuMiuShop.Entity.Slides;
+import MiuMiuShop.Entity.ThongTinLienHeShop;
 
 @Service
 public interface IHomeService {
-	@Autowired
 	public List<Slides> GetDataSlide();
-	@Autowired
+	public Slides GetDataSlideById(int id);
 	public List<LoaiSanPham> GetDataLoaiSanPham();
-	@Autowired
+	public List<SanPham> GetDataSanPhamNoiBat();
+	public List<SanPham> GetDataSanPhamMoi();
 	public List<Menu> GetDataMenu();
-	@Autowired
 	public List<SanPham> GetDataSanPham();
-	
-	@Autowired
 	public List<SanPhamDto> GetDataSanPhamDto();
+	public int SuaSlide(int id, Slides slide);
+	public int XoaSlide(int id);
+	public int TaoSlide(Slides slide);
+	public List<Slides> GetDataSlideHienThi();
 	
+	public ThongTinLienHeShop GetDataThongTinLienHeShop();
+	public int SuaThongTinLienHeShop(ThongTinLienHeShop thongTinLienHeShop);
 }

@@ -5,12 +5,12 @@ USE MIUMIUSHOP
 GO
 
 CREATE TABLE Slides(
-	MaSlide int PRIMARY KEY,
+	MaSlide int IDENTITY(1,1) PRIMARY KEY,
 	TenSlide nvarchar(100),
 	HinhAnh varchar(100),
 	NoiDung nvarchar(300),
 	Link nvarchar(100),
-	TrangThai varchar(30)
+	TrangThai nvarchar(30)
 )
 
 CREATE TABLE LoaiSanPham(
@@ -44,8 +44,8 @@ CREATE TABLE SanPham(
 
 CREATE TABLE TaiKhoan(
 	ID int IDENTITY(1,1) PRIMARY KEY,
-	TenDangNhap varchar(30) UNIQUE,
-	MatKhau varchar(30),
+	TenDangNhap varchar(30) UNIQUE NOT NULL,
+	MatKhau varchar(30) NOT NULL,
 	LoaiTaiKhoan varchar(10)
 )
 
@@ -56,6 +56,14 @@ CREATE TABLE ThongTinLienHeShop(
 	TenShop nvarchar(300),
 )
 
+
+CREATE TABLE ThongTinLienHe_KhachHang(
+	MaThongTinLienHe_KhachHang int IDENTITY(1,1) PRIMARY KEY,
+	HoTen nvarchar(100),
+	DiaChi nvarchar(300),
+	SoDienThoai varchar(10),
+)
+
 CREATE TABLE HoaDon(
 	MaHoaDon int IDENTITY(1,1) PRIMARY KEY,
 	TongTien int,
@@ -63,7 +71,8 @@ CREATE TABLE HoaDon(
 	TrangThai nvarchar(30),
 	MaThongTinLienHe_KhachHang int,
 	ID int,
-	FOREIGN KEY(ID) REFERENCES TaiKhoan(ID) ON DELETE CASCADE ON UPDATE CASCADE
+	FOREIGN KEY(ID) REFERENCES TaiKhoan(ID) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY(MaThongTinLienHe_KhachHang) REFERENCES ThongTinLienHe_KhachHang(MaThongTinLienHe_KhachHang) ON DELETE CASCADE ON UPDATE CASCADE
 )
 
 CREATE TABLE ChiTietHoaDon(
@@ -75,36 +84,6 @@ CREATE TABLE ChiTietHoaDon(
 	PRIMARY KEY(MaHoaDon, MaSanPham)
 )
 
-CREATE TABLE ThongTinLienHe_KhachHang(
-	MaThongTinLienHe_KhachHang int IDENTITY(1,1) PRIMARY KEY,
-	DiaChi nvarchar(300),
-	SoDienThoai varchar(10),
-	MaHoaDon int,
-	FOREIGN KEY(MaHoaDon) REFERENCES HoaDon(MaHoaDon) ON DELETE CASCADE ON UPDATE CASCADE
-)
-
-
-CREATE TABLE NguoiDung(
-	MaNguoiDung int PRIMARY KEY,
-	HoTen nvarchar(30),
-	DiaChi nvarchar(300),
-	SoDienThoai char(10),
-	Email varchar(30),
-	ID int,
-	FOREIGN KEY(ID) REFERENCES TaiKhoan(ID) ON DELETE CASCADE ON UPDATE CASCADE
-)
-
-
-
-
-
-
-
-
-
-
-
-
 CREATE TABLE MangXaHoi(
 	MaMangXaHoi int PRIMARY KEY,
 	Ten nvarchar(30),
@@ -115,8 +94,8 @@ CREATE TABLE MangXaHoi(
 
 
 
-INSERT INTO Slides VALUES(1, 'AAAA A', 'h01.png', 'Test thu', 'google.com', 'hien thi')
-INSERT INTO Slides VALUES(2, 'BBBB BBB', 'h02.png', 'Test thu', 'google.com', 'hien thi')
+INSERT INTO Slides VALUES('AAAA A', 'h01.png', 'Test thu', 'google.com', N'Hiển thị')
+INSERT INTO Slides VALUES('BBBB BBB', 'h02.png', 'Test thu', 'google.com', N'Hiển thị')
 
 INSERT INTO LoaiSanPham VALUES(11, N'Đồ ăn nhanh')
 INSERT INTO LoaiSanPham VALUES(12, N'Đồ uống')
@@ -164,11 +143,14 @@ SELECT * FROM Slides
 SELECT * FROM LoaiSanPham
 SELECT * FROM MENU
 SELECT * FROM SanPham
-SELECT * FROM TaiKhoan
+SELECT * FROM TaiKhoan 
 SELECT * FROM ThongTinLienHeShop
+SELECT * FROM ThongTinLienHe_KhachHang
+SELECT * FROM ChiTietHoaDon
+SELECT * FROM HoaDon
 
 
-drop table TaiKhoan
+drop table Slides
 
 
 
@@ -202,3 +184,34 @@ SELECT *
 FROM Results_CTE   
 WHERE RowNum >=   19   
 AND RowNum <=   (25);
+
+INSERT INTO HoaDon(TongTien, NgayLapHoaDon, TrangThai, MaThongTinLienHe_KhachHang, ID) 
+VALUES (18000, GETDATE(), N'Chờ xác nhận', 1, 26)
+
+
+INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai)
+VALUES('111', '0000')
+
+INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai) VALUES('njjnljn', '0373559622')
+
+SELect SCOPE_IDENTITY() AS 'maHoaDon'
+
+
+SELECT HoaDon.MaHoaDon, HoaDon.TongTien, HoaDon.NgayLapHoaDon, HoaDon.TrangThai,
+	SanPham.MaSanPham, SanPham.TenSanPham, SanPham.Gia, ThongTinLienHe_KhachHang.HoTen, 
+	ThongTinLienHe_KhachHang.MaThongTinLienHe_KhachHang, ThongTinLienHe_KhachHang.DiaChi, ThongTinLienHe_KhachHang.SoDienThoai, ChiTietHoaDon.SoLuong
+FROM HoaDon INNER JOIN ThongTinLienHe_KhachHang ON HoaDon.MaThongTinLienHe_KhachHang = ThongTinLienHe_KhachHang.MaThongTinLienHe_KhachHang
+INNER JOIN ChiTietHoaDon ON HoaDon.MaHoaDon = ChiTietHoaDon.MaHoaDon
+INNER JOIN SanPham ON SanPham.MaSanPham = ChiTietHoaDon.MaSanPham
+WHERE HoaDon.MaHoaDon = 5
+
+
+UPDATE HoaDon SET HoaDon.NgayLapHoaDon = N'Xác nhận' WHERE HoaDon.MaHoaDon = 1
+
+UPDATE ThongTinLienHe_KhachHang SET HoTen = '', DiaChi ='', SoDienThoai = '' WHERE MaThongTinLienHe_KhachHang = 1
+
+SELECT TOP 3 * FROM SanPham WHERE NoiBat = 1
+
+UPDATE SanPham 
+SET TenSanPham = N'Trà ô long 2', HinhAnh = 'h01.png', Gia = 2000, MoTa = N'Mô tả ô long', NgayCapNhat = GETDATE(), SanPhamMoi = 1, NoiBat = 1, MaLoaiSanPham = 13 
+WHERE MaSanPham = 2

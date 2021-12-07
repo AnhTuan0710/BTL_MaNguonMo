@@ -50,10 +50,11 @@ public class TaiKhoanController extends BaseController{
 		{
 			_mvShare.setViewName("redirect:/trang-chu");
 			session.setAttribute("thongTinNguoiDung", taiKhoan);	
+			session.removeAttribute("statusLogin");
 		}
 		else 
 		{
-			_mvShare.addObject("statusLogin", "Đăng nhập thất bại");
+			_mvShare.addObject("statusLogin", "Kiểm tra lại tài khoản và mật khẩu");
 		}
 		return _mvShare;
 	}

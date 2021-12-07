@@ -11,10 +11,12 @@ public class HomeController extends BaseController {
 	@RequestMapping(value = {"/", "trang-chu"}, method = RequestMethod.GET)
 	public ModelAndView Index()
 	{
-		_mvShare.addObject("slides", _homeService.GetDataSlide());
+		_mvShare.addObject("slides", _homeService.GetDataSlideHienThi());
 		_mvShare.addObject("loaiSanPham", _homeService.GetDataLoaiSanPham());
 		_mvShare.addObject("sanPham", _homeService.GetDataSanPham());
-		_mvShare.addObject("sanPham_loaiSanPham", _homeService.GetDataSanPhamDto());
+		//_mvShare.addObject("sanPham_loaiSanPham", _homeService.GetDataSanPhamDto());
+		_mvShare.addObject("sanPhamNoiBat", _homeService.GetDataSanPhamNoiBat());
+		_mvShare.addObject("sanPhamMoi", _homeService.GetDataSanPhamMoi());
 		
 		_mvShare.setViewName("user/index");
 		return _mvShare;

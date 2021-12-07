@@ -36,6 +36,27 @@ public class HomeServiceImpl implements IHomeService {
 
 		return slidesDao.GetDataSlide();
 	}
+	public List<Slides> GetDataSlideHienThi()
+	{
+		return slidesDao.GetDataSlideHienThi();
+	}
+	
+	public Slides GetDataSlideById(int id) {
+		return slidesDao.GetDataSlideById(id);
+	}
+	
+	public int SuaSlide(int id, Slides slide) {
+		return slidesDao.SuaSlide(id, slide);
+	}
+	
+	public int XoaSlide(int id) {
+		return slidesDao.XoaSlide(id);
+	}
+	
+	public int TaoSlide(Slides slide) {
+		return slidesDao.TaoSlide(slide);
+	}
+
 
 	public List<LoaiSanPham> GetDataLoaiSanPham() {
 
@@ -61,5 +82,16 @@ public class HomeServiceImpl implements IHomeService {
 
 		return thongTinLienHeShopDao.GetDataThongTinLienHeShop();
 	}
-
+	public List<SanPham> GetDataSanPhamNoiBat() {
+		// TODO Auto-generated method stub
+		return sanPhamDao.GetDataSanPhamNoiBat();
+	}
+	public List<SanPham> GetDataSanPhamMoi() {
+		// TODO Auto-generated method stub
+		return sanPhamDao.GetDataSanPhamMoi();
+	}
+	public int SuaThongTinLienHeShop(ThongTinLienHeShop thongTinLienHeShop) {
+		// TODO Auto-generated method stub
+		return thongTinLienHeShopDao.SuaThongTinLienHeShop(thongTinLienHeShop);
+	}
 }

@@ -13,7 +13,7 @@ public class MapperHoaDon implements RowMapper<HoaDon> {
 		hoaDon.setTongTien(rs.getInt("TongTien"));
 		hoaDon.setNgayLapHoaDon(rs.getDate("NgayLapHoaDon"));
 		hoaDon.setTrangThai(rs.getString("TrangThai"));
-		hoaDon.setMaLienHe_KhachHang(rs.getInt("MaLienHe_KhachHang"));
+		hoaDon.setMaLienHe_KhachHang(rs.getInt("MaThongTinLienHe_KhachHang"));
 		hoaDon.setId(rs.getInt("ID"));
 		return hoaDon;
 	}

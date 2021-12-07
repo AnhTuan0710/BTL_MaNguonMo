@@ -1,0 +1,18 @@
+
+.login-admin{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 183, 255);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.login-admin>th{
+    padding: 10px;
+    font-size: 30px;
+}
+.login-admin>td{
+    padding: 7px;
+}

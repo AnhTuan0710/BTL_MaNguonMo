@@ -13,14 +13,15 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import MiuMiuShop.Dto.HoaDonDto;
+import MiuMiuShop.Dto.MapperHoaDonDto;
 import MiuMiuShop.Entity.ChiTietHoaDon;
 import MiuMiuShop.Entity.HoaDon;
 import MiuMiuShop.Entity.MapperHoaDon;
-import MiuMiuShop.Entity.ThongTinLienHe_KhachHang;
 
 @Repository
 public class HoaDonDao extends BaseDao{
-	public List<HoaDon> GetDataMenu()
+	public List<HoaDon> GetDataHoaDon()
 	{
 		List<HoaDon> list = new ArrayList<HoaDon>();
 		String sql = "SELECT * FROM HoaDon";
@@ -56,14 +57,6 @@ public class HoaDonDao extends BaseDao{
 	
 	public int GetIDLastest(final String sql_)
 	{
-		/*
-		 * String sql = "INSERT INTO ThongTinLienHe_KhachHang (DiaChi, SoDienThoai) " +
-		 * "VALUES('"+ thongTinLienHe_KhachHang.getDiaChi()+ "', '"+
-		 * thongTinLienHe_KhachHang.getSoDienThoai() +"')"; thongTinLienHe_KhachHang =
-		 * _jdbcTemplate.update(sql, new MapperThongTinLienHe_KhachHang());
-		 * 
-		 * return thongTinLienHe_KhachHang;
-		 */
 		KeyHolder keyHolder = new GeneratedKeyHolder();
 
 		_jdbcTemplate.update(
@@ -74,5 +67,44 @@ public class HoaDonDao extends BaseDao{
 		  }, keyHolder);
 
 		return keyHolder.getKey().intValue();
+	}
+	
+	public List<HoaDonDto> GetHoaDonByID(int id)
+	{
+		List<HoaDonDto> list = new ArrayList<HoaDonDto>();
+		String sql = "SELECT HoaDon.MaHoaDon, HoaDon.TongTien, HoaDon.NgayLapHoaDon, HoaDon.TrangThai, " + 
+				"	SanPham.MaSanPham, SanPham.TenSanPham, SanPham.Gia, ThongTinLienHe_KhachHang.HoTen, " + 
+				"	ThongTinLienHe_KhachHang.MaThongTinLienHe_KhachHang, ThongTinLienHe_KhachHang.DiaChi, ThongTinLienHe_KhachHang.SoDienThoai, ChiTietHoaDon.SoLuong " + 
+				"FROM HoaDon INNER JOIN ThongTinLienHe_KhachHang ON HoaDon.MaThongTinLienHe_KhachHang = ThongTinLienHe_KhachHang.MaThongTinLienHe_KhachHang " + 
+				"INNER JOIN ChiTietHoaDon ON HoaDon.MaHoaDon = ChiTietHoaDon.MaHoaDon " + 
+				"INNER JOIN SanPham ON SanPham.MaSanPham = ChiTietHoaDon.MaSanPham "
+				+"WHERE HoaDon.MaHoaDon = " + id;
+		list = _jdbcTemplate.query(sql, new MapperHoaDonDto());
+		return list;
+	}
+	
+	public int XacNhanDon(int id)
+	{
+		String sql = "UPDATE HoaDon SET HoaDon.TrangThai = N'Xác nhận' WHERE HoaDon.MaHoaDon = " + id;
+		int check = _jdbcTemplate.update(sql);
+		return check;
+	}
+	
+	public int HuyDon(int id)
+	{
+		String sql = "UPDATE HoaDon SET HoaDon.TrangThai = N'Hủy' WHERE HoaDon.MaHoaDon = " + id;
+		int check = _jdbcTemplate.update(sql);
+		return check;
+	}
+	
+	public int ChinhSuaDonHang(int id, HoaDonDto hoaDon)
+	{
+		String sql = "UPDATE ThongTinLienHe_KhachHang SET HoTen = '"+ hoaDon.getHoTen()+"', DiaChi ='"+ hoaDon.getDiaChi()
+					+"', SoDienThoai = '"+hoaDon.getSoDienThoai()+"' "
+					+ "WHERE MaThongTinLienHe_KhachHang = " + hoaDon.getMaThongTinLienHe_KhachHang();
+		String sql_ = "UPDATE HoaDon SET HoaDon.NgayLapHoaDon = '"+hoaDon.getNgayLapHoaDon()+"' WHERE HoaDon.MaHoaDon = " + id;
+		int check = _jdbcTemplate.update(sql);
+		check = _jdbcTemplate.update(sql_);
+		return check;
 	}
 }

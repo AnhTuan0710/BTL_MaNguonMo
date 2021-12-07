@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trang Amin</title>
+<link rel="stylesheet" href="<c:url value='/assets/admin/css/style.css' />" type="text/css">
+</head>
+<body>
+	<header>
+        <div class="caption">
+            Adminitator
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="">Quản lý đơn hàng</a></li>
+                <li><a href="">Quản lý slide-banner</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div style="text-align: center;">Danh sách đơn hàng</div>
+            <table width="100%" style="margin-top: 30px" border="1" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>Mã đơn hàng</th>
+                    <th>Tên khách hàng</th>
+                    <th>Ngày đặt</th>
+                    <th>Trạng thái</th>
+                    <th>Chi tiết</th>
+                </tr>
+                <tr>
+                    <td>
+                        a
+                    </td>
+                    <td>
+                        a
+                    </td>
+                    <td>
+                        a
+                    </td>
+                    <td>
+                        a
+                    </td>
+                    <td>
+                        <a href="google.com">aaaa</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

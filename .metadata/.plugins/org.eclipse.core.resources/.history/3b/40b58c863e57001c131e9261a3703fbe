@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+
+<body>
+	<div class="content">
+		<div style="text-align: center;">Chi tiết sản phẩm</div>
+
+		<div>Mã sản phẩm: ${ThongTinSlide.maSlide }</div>
+		<div>Tên sản phẩm: ${ }</div>
+		<div>Hình ảnh: ${ThongTinSlide.tenSlide }</div>
+		<div>Giá: ${ThongTinSlide.noiDung }</div>
+		<div>Mô tả: ${ThongTinSlide.hinhAnh }</div>
+		<div>Ngày tạo: ${ThongTinSlide.link }</div>
+		<div>Ngày cập nhật: ${ThongTinSlide.link }</div>
+		<div>Sản phẩm nổi bật: ${ThongTinSlide.link }</div>
+		<div>Sản phẩm mới: ${ThongTinSlide.link }</div>
+		<div>Loại sản phẩm: ${ThongTinSlide.link }</div>
+
+		<a
+			href="<c:url value='/admin/chi-tiet-slide/${ ThongTinSlide.maSlide}/chinh-sua'/>">Chỉnh
+			sửa</a> <a
+			href="<c:url value='/admin/chi-tiet-slide/${ ThongTinSlide.maSlide}/xoa'/>">Xóa</a>
+	</div>
+</body>

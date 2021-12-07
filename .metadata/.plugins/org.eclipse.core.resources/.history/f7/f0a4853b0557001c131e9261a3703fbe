@@ -1,0 +1,72 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+
+<body>
+	<header>
+        <div class="caption">
+            Adminitator
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="<c:url value='/admin/danh-sach-hoa-don'/>">Quản lý đơn hàng</a></li>
+                <li><a href="">Quản lý slide-banner</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+                <li><a href="">Quản lý người dùng</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+        	<form:form action="luu" modelAttribute="taiKhoan" method="POST">
+	            <div style="text-align: center;">Chi tiết đơn hàng</div>
+	            
+	            <div>Mã đơn hàng: ${ThongTinHoaDon.maHoaDon }</div>
+	            <label>Tên khách hàng: ${ThongTinHoaDon.hoTen }</label>
+	            <form:input path="hoTen"/>
+	            
+	            <label>Số điện thoại: ${ThongTinHoaDon.soDienThoai }</label>
+	            <form:input path="soDienThoai"/>
+	            <label>Ngày đặt: ${ThongTinHoaDon.ngayLapHoaDon }</label>
+	            <form:input path="ngayLapHoaDon"/>
+	            <div>Trạng thái: ${ThongTinHoaDon.trangThai }</div>
+	            <label>Địa chỉ giao: ${ThongTinHoaDon.diaChi }</label>
+	            <form:input path="diaChi"/>
+	            <div>Danh sách sản phẩm: </div>
+	            <table width="100%" style="margin-top: 30px" border="1" cellpadding="0" cellspacing="0">
+	                <tr>
+	                    <th>Mã sản phẩm</th>
+	                    <th>Tên sản phẩm</th>
+	                    <th>Số lượng</th>
+	                    <th>Đơn giá</th>
+	                    <th>Thành tiền</th>
+	                </tr>
+	                <c:forEach var="item" items="${DanhSachSanPhamHoaDon }">
+	                	 <tr>
+		                    <td>
+		                        ${item.maSanPham }
+		                    </td>
+		                    <td>
+		                        ${item.tenSanPham }
+		                    </td>
+		                   	<td>
+		                   		${item.soLuong }
+		                   	</td>
+		                   	<td>
+		                   		${item.gia }
+		                   	</td>
+		                   	<td>
+		                   		${item.soLuong*item.gia }
+		                   	</td>
+		                </tr>
+	                </c:forEach>
+	            </table>
+	            
+	            <div>Tổng tiền: ${ThongTinHoaDon.tongTien } VND</div>
+	            
+	            <button type="submit" class="button-signup">Lưu</button>
+            </form:form>
+        </div>
+    </main>
+</body>

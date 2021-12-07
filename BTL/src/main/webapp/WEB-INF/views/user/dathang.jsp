@@ -3,6 +3,10 @@
 <%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
 <body>
 	<form:form action="dat-hang/xac-nhan" class="form-pay" modelAttribute="thongTinLienHe_KhachHang">
+			<label for="hoTen">Họ tên</label>
+			<br/>
+			<form:input type="text" name="hoTen" id="hoTen" path="hoTen"  />
+			<br/>
 			<label for="diaChi">Địa chỉ</label>
 			<br/>
 			<form:input type="text" name="diaChi" id="diaChi" path="diaChi"  />

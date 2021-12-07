@@ -1,0 +1,21 @@
+package MiuMiuShop.Controller.Admin;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import MiuMiuShop.Entity.TaiKhoan;
+
+@Controller
+public class TaiKhoanController_ {
+	@RequestMapping(value ="/admin/danh-sach-slide")
+	public ModelAndView GetDataTaiKhoan()
+	{
+		ModelAndView mv = new ModelAndView();
+		mv.addObject("DanhSachSlide", homeService.GetDataSlide());
+		mv.setViewName("admin/taikhoan/danhsachtaikhoan");	
+		return  mv;
+	}
+}
