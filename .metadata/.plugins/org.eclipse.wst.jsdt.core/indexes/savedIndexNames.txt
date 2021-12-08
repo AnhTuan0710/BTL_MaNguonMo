@@ -1,13 +1,8 @@
 INDEX VERSION 1.4+F:\Download\Homework\ki7\PhanMemMaNguonMo\Nhom\BTL_MaNguonMo\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2770682928.index
 1916576579.index
 2028985948.index
-3480348224.index
-3746130732.index
 311961358.index
-3919977875.index
-3958676430.index
-1513197865.index
 1017664175.index
-2770682928.index
 2731189731.index
 1763394539.index

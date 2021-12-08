@@ -13,14 +13,12 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperThongTinLienHeShop"/>
-<fullyQualifiedTypeName name="MiuMiuShop.Entity.ThongTinLienHeShop"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Dao.ThongTinLienHeShopDao"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.MapperHoaDon"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Dao.HoaDonDao"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Service.User.IHoaDonService"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="MiuMiuShop.Service.User.TaiKhoanServiceImpl"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.ThongTinLienHe_KhachHang"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Service.User.IThongTinLienHe_KhachHangService"/>
@@ -43,12 +41,10 @@
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.HoaDon"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Dto.MapperHoaDonDto"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Dto.HoaDonDto"/>
-<fullyQualifiedTypeName name="MiuMiuShop.Service.User.HomeServiceImpl"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.Slides"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.TaiKhoan"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Service.User.SanPhamServiceImpl"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="MiuMiuShop.Entity.SanPham"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.HomeServiceImpl"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Entity.ThongTinLienHeShop"/>
+<fullyQualifiedTypeName name="MiuMiuShop.Service.User.TaiKhoanServiceImpl"/>
 </qualifiedTypeNameHistroy>

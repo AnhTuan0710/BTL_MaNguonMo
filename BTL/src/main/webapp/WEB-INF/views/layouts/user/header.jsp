@@ -88,7 +88,7 @@
 				<label for="total-money">Tổng tiền: ${TongTienGioHang }</label>
 			</c:if> --%>
 			<label for="total-money">Tổng tiền: 
-					<c:if test="${ not empty TongTienGioHang }">${TongSanPhamGioHang }</c:if>
+					<c:if test="${ not empty TongTienGioHang }">${TongTienGioHang }</c:if>
 					<c:if test="${ empty TongTienGioHang }">0</c:if> VND</label>
 			<div class="pay-submit button">
 				<a href="<c:url value='/dat-hang'/>">Đặt ngay</a>

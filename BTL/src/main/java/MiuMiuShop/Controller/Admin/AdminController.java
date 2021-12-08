@@ -137,7 +137,7 @@ public class AdminController {
 
 		mv.addObject("ThongTinHoaDon", hoaDon);
 		mv.addObject("DanhSachSanPhamHoaDon", hoaDonDto);
-		mv.setViewName("admin/chitiethoadon/" + id);
+		mv.setViewName("redirect:/admin/chi-tiet-hoa-don/" + id);
 		return mv;
 	}
 }
