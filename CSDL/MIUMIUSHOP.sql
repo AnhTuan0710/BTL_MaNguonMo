@@ -84,13 +84,6 @@ CREATE TABLE ChiTietHoaDon(
 	PRIMARY KEY(MaHoaDon, MaSanPham)
 )
 
-CREATE TABLE MangXaHoi(
-	MaMangXaHoi int PRIMARY KEY,
-	Ten nvarchar(30),
-	Link varchar(300),
-	MaLienHeShop int,
-	FOREIGN KEY(MaLienHeShop) REFERENCES LienHeShop(MaLienHeShop) ON DELETE CASCADE ON UPDATE CASCADE,
-)
 
 
 
