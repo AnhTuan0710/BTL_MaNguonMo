@@ -4,7 +4,7 @@
 
 <body>
 	<div class="content">
-		<div style="text-align: center;">Chi tiết đơn hàng</div>
+		<div style="text-align: center;" class="caption-table">Chi tiết đơn hàng</div>
 
 		<div>Mã đơn hàng: ${ThongTinHoaDon.maHoaDon }</div>
 		<div>Tên khách hàng: ${ThongTinHoaDon.hoTen }</div>

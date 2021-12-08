@@ -3,7 +3,7 @@
 <%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
 <body>
 	<div class="content">
-		<div style="text-align: center;">Chỉnh sửa sản phẩm</div>
+		<div style="text-align: center;" class="caption-table">Chỉnh sửa sản phẩm</div>
 		<form:form action="chinh-sua/luu" modelAttribute="sanPham" method="POST">
 			<table>
 				<tr>

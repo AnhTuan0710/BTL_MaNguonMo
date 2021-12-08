@@ -9,7 +9,7 @@
 					<tr>
 						<th colspan="2">Đăng nhập</th>
 					</tr>
-					<div>${statusLogin }</div>
+					<div style="color:red">${statusLogin }</div>
 					<tr>
 						<td><label for="Username">Tài khoản:</label></td>
 						<td><form:input type="text" name="Username" id="Username"

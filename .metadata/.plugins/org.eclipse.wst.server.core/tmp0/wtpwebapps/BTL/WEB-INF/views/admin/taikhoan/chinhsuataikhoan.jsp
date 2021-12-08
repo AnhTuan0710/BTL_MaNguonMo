@@ -6,7 +6,7 @@
 	<div class="content">
 		<form:form action="chinh-sua/luu" modelAttribute="taiKhoan"
 			method="POST">
-			<div style="text-align: center;">Chỉnh sửa tài khoản</div>
+			<div style="text-align: center;" class="caption-table">Chỉnh sửa tài khoản</div>
 			<table>
 				<tr>
 					<td>ID:</td>

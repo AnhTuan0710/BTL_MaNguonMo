@@ -3,7 +3,7 @@
 <%@ include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
 <body>
 	<div class="content">
-		<div style="text-align: center;">Danh sách slide-banner</div>
+		<div style="text-align: center;" class="caption-table">Danh sách slide-banner</div>
 		<table width="100%" style="margin-top: 30px" border="1"
 			cellpadding="0" cellspacing="0">
 			<tr>

@@ -4,7 +4,7 @@
 
 <body>
 	<div class="content">
-		<div style="text-align: center;">Chi tiết slide</div>
+		<div style="text-align: center;" class="caption-table">Chi tiết slide</div>
 
 		<div>Mã slide: ${ThongTinSlide.maSlide }</div>
 		<div>

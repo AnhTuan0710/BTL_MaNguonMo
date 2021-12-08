@@ -43,7 +43,7 @@ public class AdminController {
 	@RequestMapping(value = "/admin/dang-nhap")
 	public ModelAndView CheckDangNhap(HttpSession session, @ModelAttribute("taiKhoan") TaiKhoan taiKhoan) {
 		ModelAndView mv = new ModelAndView();
-		int check = taiKhoanService.KiemTraTaiKhoan(taiKhoan);
+		int check = taiKhoanService.KiemTraTaiKhoanAdmin(taiKhoan);
 		if(check> 0)
 		{
 			mv.setViewName("redirect:/admin/danh-sach-hoa-don");

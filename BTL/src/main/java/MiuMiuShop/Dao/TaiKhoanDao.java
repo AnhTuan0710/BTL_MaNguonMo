@@ -77,4 +77,19 @@ public class TaiKhoanDao extends BaseDao{
 		list = _jdbcTemplate.query(sql, new MapperTaiKhoan());
 		return list.get(0);
 	}
+
+	public int KiemTraTaiKhoanAdmin(TaiKhoan taiKhoan) {
+		// TODO Auto-generated method stub
+		List<TaiKhoan> result = new ArrayList<TaiKhoan>();
+		String sql = "SELECT * FROM TaiKhoan "
+				+ "WHERE LoaiTaiKhoan = 'Admin'"
+				+ "AND TenDangNhap = '" + taiKhoan.getTenDangNhap() +"' "
+				+ "AND MatKhau = '" + taiKhoan.getMatKhau() + "'";
+		result = _jdbcTemplate.query(sql, new MapperTaiKhoan());
+		if(result.size() <= 0 )
+		{
+			return 0;
+		}
+		return 1;
+	}
 }

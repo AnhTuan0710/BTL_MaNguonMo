@@ -6,7 +6,7 @@
 	<div class="content">
 		<form:form action="chinh-sua/luu" modelAttribute="hoaDon"
 			method="POST">
-			<div style="text-align: center;">Chi tiết đơn hàng</div>
+			<div style="text-align: center;" class="caption-table">Chi tiết đơn hàng</div>
 			<table>
 				<tr>
 					<td>Mã đơn hàng:</td>

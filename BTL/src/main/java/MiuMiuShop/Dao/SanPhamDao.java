@@ -102,14 +102,14 @@ public class SanPhamDao extends BaseDao {
 
 	public List<SanPham> GetDataSanPhamNoiBat() {
 		List<SanPham> list = new ArrayList<SanPham>();
-		String sql = "SELECT TOP 3 * FROM SanPham WHERE NoiBat = 1";
+		String sql = "SELECT TOP 3 * FROM SanPham WHERE NoiBat = 1 order by newid()";
 		list = _jdbcTemplate.query(sql, new MapperSanPham());
 		return list;
 	}
 
 	public List<SanPham> GetDataSanPhamMoi() {
 		List<SanPham> list = new ArrayList<SanPham>();
-		String sql = "SELECT TOP 3 * FROM SanPham WHERE SanPhamMoi = 1";
+		String sql = "SELECT TOP 3 * FROM SanPham WHERE SanPhamMoi = 1 order by newid()";
 		list = _jdbcTemplate.query(sql, new MapperSanPham());
 		return list;
 	}

@@ -4,7 +4,7 @@
 
 <body>
 	<div class="content">
-		<div style="text-align: center;">Thông tin shop</div>
+		<div style="text-align: center;" class="caption-table">Thông tin shop</div>
 		<form:form action="thong-tin-shop/luu" modelAttribute="thongTinLienHeShop" mothed="POST">
 			<table>
 				<tr>

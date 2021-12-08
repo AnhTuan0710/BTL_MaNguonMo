@@ -1,3 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /*mac dinh là 16px*/
+}
+
+body{
+    padding: 0 0px;
+}
 
 .login-admin{
     position: fixed;
@@ -19,12 +37,14 @@
 
 header{
     height: 50px;
-    background-color: blue;
+    background-color: rgb(0, 183, 255);
     display: flex;
 }
 
 .caption{
     margin: auto 0;
+    font-size: 24px;
+    padding-left: 20px;
 }
 
 main{
@@ -59,6 +79,11 @@ nav>ul>li:hover{
     flex: 5;
     margin-top: 20px;
     margin-left: 20px;
+}
+
+
+.caption-table{
+	font-size: 24px;
 }
 
 

@@ -1,5 +1,0 @@
-package MiuMiuShop.Service.User;
-
-public interface ILoaiSanPhamSevice {
-
-}

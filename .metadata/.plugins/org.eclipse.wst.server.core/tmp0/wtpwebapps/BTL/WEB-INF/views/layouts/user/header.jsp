@@ -4,14 +4,16 @@
 <header>
 	<div class="header-top flex-container">
 		<div class="left">
-			<p>Nguyên liệu nấu ăn cho mọi nhà</p>
+			<p style="color: white">Thiên đường ăn vặt</p>
 		</div>
 		<div class="right">
 			<ul class="nav-list flex-container">
-				<li class="item-nav"><a href="">Lien he</a></li>
-				<li class="item-nav"><a href="">Lien he</a></li>
-				<li class="item-nav"><a href="">Lien he</a></li>
-				<li class="item-nav"><a href="">Lien he</a></li>
+				<li class="item-nav"><a href="">Giới thiệu</a></li>
+				<li class="item-nav"><a href="">Liên hệ</a></li>
+				<li class="item-nav"><a href="">Tin tức</a></li>
+                <li class="item-nav"><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li class="item-nav"><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li class="item-nav"><a href=""><i class="fab fa-pinterest-p"></i></a></li>
 			</ul>
 		</div>
 	</div>
@@ -19,7 +21,7 @@
 	<div class="header-mid flex-container">
 		<div class="left">
 			<img width="220" height="100"
-				src="http://nguyenlieunauan.khoweb24h.com/wp-content/uploads/2020/04/logo.png"
+				src="<c:url value='/assets/user/img/logo/logo.jpg'/>"
 				class="header_logo header-logo" alt="Web Nguyên Liệu Nấu Ăn" />
 		</div>
 		<div class="mid">
@@ -48,7 +50,8 @@
 			<ul class="nav-list flex-container">
 				<c:forEach var="item" items="${menu }" varStatus="index">
 					<c:if test="${index.first }">
-						<li class="item-nav active">
+						<!-- <li class="item-nav active"> -->
+						<li class="item-nav">
 					</c:if>
 					<c:if test="${not index.first }">
 						<li class="item-nav">
@@ -59,6 +62,7 @@
 			</ul>
 		</div>
 		<div class="right">
+			<i class="fas fa-shopping-cart"></i>
 			<div class="button" onclick="open_cart()">Giỏ hàng(					
 					<c:if test="${ not empty TongSanPhamGioHang }">${TongSanPhamGioHang }</c:if>
 					<c:if test="${ empty TongSanPhamGioHang }">0</c:if>

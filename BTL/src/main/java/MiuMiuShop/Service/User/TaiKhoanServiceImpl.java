@@ -46,4 +46,9 @@ public class TaiKhoanServiceImpl implements ITaiKhoanService{
 		// TODO Auto-generated method stub
 		return taiKhoanDao.GetDataTaiKhoanById(id);
 	}
+
+	public int KiemTraTaiKhoanAdmin(TaiKhoan taiKhoan) {
+		// TODO Auto-generated method stub
+		return taiKhoanDao.KiemTraTaiKhoanAdmin(taiKhoan);
+	}
 }

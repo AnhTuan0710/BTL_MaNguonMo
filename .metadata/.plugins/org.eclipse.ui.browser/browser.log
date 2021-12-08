@@ -90,3 +90,10 @@ Dec 07, 2021 17:50:37.66 [7660:16300:1207/175037.668:ERROR:fallback_task_provide
 Dec 07, 2021 17:50:46.75 [7660:16300:1207/175046.757:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
 Dec 07, 2021 17:50:53.11 [7660:16300:1207/175053.116:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
 Dec 07, 2021 17:51:33.56 [7660:16300:1207/175132.719:ERROR:fallback_task_provider.cc(118)] Every renderer should have at least one task provided by a primary task provider. If a fallback task is shown, it is a bug. Please file a new bug and tag it as a dependency of crbug.com/739782.
+
+Dec 09, 2021 24:41:21.08 NEW SESSION
+Dec 09, 2021 24:41:21.08 [8988:5596:1209/004121.079:ERROR:chrome_browser_main_extra_parts_metrics.cc(226)] crbug.com/1216328: Checking Bluetooth availability started. Please report if there is no report that this ends.
+Dec 09, 2021 24:41:21.12 [8988:5596:1209/004121.084:ERROR:chrome_browser_main_extra_parts_metrics.cc(229)] crbug.com/1216328: Checking Bluetooth availability ended.
+Dec 09, 2021 24:41:21.12 [8988:5596:1209/004121.084:ERROR:chrome_browser_main_extra_parts_metrics.cc(232)] crbug.com/1216328: Checking default browser status started. Please report if there is no report that this ends.
+Dec 09, 2021 24:41:21.12 [8988:5596:1209/004121.085:ERROR:chrome_browser_main_extra_parts_metrics.cc(236)] crbug.com/1216328: Checking default browser status ended.
+Dec 09, 2021 24:41:21.22 [8988:8976:1209/004121.223:ERROR:device_event_log_impl.cc(214)] [00:41:21.217] Bluetooth: bluetooth_adapter_winrt.cc:1075 Getting Default Adapter failed.

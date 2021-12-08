@@ -65,7 +65,7 @@
 	                    	<c:forEach var="item" items="${sanPham }">
 	                    		<c:if test="${item.maLoaiSanPham == loaiSanPham.maLoaiSanPham  && dem <=6}">
 	                    			<div class="item-product">
-										<a href="<c:url value='/chi-tiet-san-pham/${item.maSanPham }'/>" class="product-image-a" ><img class="product-image" src="<c:url value='/assets/user/img/slides/${item.hinhAnh }'/>" alt=""></a>
+										<a href="<c:url value='/chi-tiet-san-pham/${item.maSanPham }'/>" class="product-image-a" ><img class="product-image" src="<c:url value='/assets/user/img/sanpham/${item.hinhAnh }'/>" alt=""></a>
 										<div class="product-info">
 											<div class="product-name">${item.tenSanPham }</div>
 									  		 <div class="product-price"><fmt:formatNumber type="number" groupingUsed="true" value="${item.gia}" /> VND</div>

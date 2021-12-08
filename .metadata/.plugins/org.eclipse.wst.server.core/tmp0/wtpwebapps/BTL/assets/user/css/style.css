@@ -14,7 +14,7 @@ html{
 }
 
 body{
-    padding: 0 50px;
+    padding: 0 0px;
 }
 
 
@@ -32,8 +32,13 @@ a{
 .button{
     display: inline-block;
     padding: 0px 20px;
-    background-color: rgb(0, 184, 107);
+    background-color: rgb(225,245,196);
     cursor: pointer;
+    border-radius: 7px;
+}
+
+.button:hover{
+    background-color: rgb(237,229,116);
 }
 
 .flex-container{
@@ -47,9 +52,12 @@ a{
 /*---------------------HEADER-----------------------*/
 header{
     position: relative;
+    padding: 0 50px;
 }
 /*--------top----------*/
 .header-top{
+    padding: 3px 5px;
+    background-color: rgb(255,78,80);
 }
 
 
@@ -59,8 +67,13 @@ header{
 .nav-list>.item-nav{
     margin: 0 3px;
 }
-.nav-list>.item-nav>a {
+.header-top>.right>.nav-list>.item-nav>a {
     text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.header-top>.right>.nav-list>.item-nav>a:hover {
     color: black;
 }
 /*-----------mid------------*/
@@ -92,7 +105,7 @@ header{
 /*-----------bottom----------*/
 
 .header-bottom{
-    background-color: rgb(0, 214, 46);
+    background-color: rgb(255,78,80);
     padding: 0px 0;
 }
 
@@ -107,7 +120,7 @@ header{
 }
 
 .nav-main>.nav-list>.item-nav{
-    background-color: darkkhaki;
+    background-color: rgb(249,212,35);
     margin: 0 0;
     padding: 15px 15px;
 }
@@ -117,7 +130,7 @@ header{
 }
 
 .nav-main>.nav-list>.item-nav:hover{
-    background-color: darkturquoise;
+    background-color: rgb(134,226,179);
 }
 
 .header-bottom>.right{
@@ -130,6 +143,7 @@ header{
 
 /*---------------------Main-----------------------------*/
 .main{
+    padding: 0 50px;
 }
 
 .slide-banner{
@@ -169,6 +183,7 @@ header{
     font-weight: bold; 
     font-size: 50px;
     color: black;
+    color:  #474040;
 }
 
 .control-button>button{
@@ -194,7 +209,7 @@ header{
     right:0;
     width: 30%;
     height: 100%;
-    background-color: cadetblue;
+    background-color: #ddd;
     z-index: 99;
     padding: 10px;
     display: none;
@@ -292,7 +307,7 @@ header{
 }
 
 .main-content>.category>.caption{
-    background-color: rgb(0, 40, 128);
+    background-color: rgb(252,145,58);
     padding: 10px 5px;
     display: flex;
     flex-direction: row;
@@ -301,6 +316,9 @@ header{
 
 .main-content>.category>.caption>.text{
     margin: auto 0;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 800;
 }
 
 .main-content>.category>.caption>.view-more{
@@ -311,13 +329,18 @@ header{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 10px;
+
+    margin-bottom: 30px;
 }
 .main-content>.category>.container-product>.item-product{
     display: flex;
     flex-direction: column;
     border: 1px solid red;
-
     position: relative;
+}
+
+.main-content>.category>.container-product>.item-product:hover{
+    box-shadow:10px 10px 5px rgba(0, 0, 0, .5);
 }
 
 .product-image-a{
@@ -341,6 +364,7 @@ header{
 
 .main-content>.category>.container-product>.item-product>.product-info>.product-name{
     margin: auto;
+    text-align: center;
 }
 
 .main-content>.category>.container-product>.item-product>.product-info>.product-price{
@@ -349,8 +373,8 @@ header{
 
 .main-content>.category>.container-product>.item-product>.add-cart{
     position: absolute;
-    bottom: 10px;
-    right: 15px;
+    bottom: 8px;
+    right: 13px;
 }
 
 
@@ -360,19 +384,18 @@ header{
 
 /*-----------footer------------------*/
 footer{
-    margin: 20px 40px;
+    margin-top: 50px;
+    padding: 0 60px;
     justify-content: space-around;
+    background-color: whitesmoke;
 }
 
 footer>*>.caption{
-    background-color: cadetblue;
     width: 100%;
     padding: 10px 0;
 }
 footer>*>.info-content{
-    background-color: rgb(0, 49, 51);
     width: 100%;
-    padding: 10px 0;
 }
 
 footer>*{
@@ -380,9 +403,12 @@ footer>*{
 }
 
 footer>.info>.caption{
-    background-color: cadetblue;
     width: 100%;
     padding: 10px 0;
+}
+
+ul{
+    list-style-position: inside;
 }
 
 footer>.info>.info-content{
@@ -447,6 +473,7 @@ footer>.info>.info-content{
 /*----------product----------*/
 .product-detail{
     flex-direction: column;
+    padding: 0 50px;
 }
 
 
@@ -467,6 +494,7 @@ footer>.info>.info-content{
 
 .product-detail>.top>.right{
     flex:1;
+    margin-left: 20px;
 }
 
 
@@ -503,4 +531,15 @@ footer>.info>.info-content{
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+/*--------------fomr-pay---------*/
+.form-pay{
+    position: relative;
+    top: 0;
+    left: 40%;
+    display: inline-block;
+    background-color:honeydew;
+    padding: 20px;
+    border-radius: 20px;
 }

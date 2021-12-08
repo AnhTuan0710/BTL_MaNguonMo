@@ -4,7 +4,7 @@
 
 <body>
 	<div class="content">
-		<div style="text-align: center;">Tạo slide</div>
+		<div style="text-align: center;" class="caption-table">Tạo slide</div>
 		<form:form action="them/luu" modelAttribute="slide">
 			<table>
 				<tr>

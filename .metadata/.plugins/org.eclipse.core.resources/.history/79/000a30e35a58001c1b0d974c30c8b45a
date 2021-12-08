@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: 20px;
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /*mac dinh là 16px*/
+}
+
+body{
+    padding: 0 0px;
+}
+
+.login-admin{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 183, 255);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.login-admin>th{
+    padding: 10px;
+    font-size: 30px;
+}
+.login-admin>td{
+    padding: 7px;
+}
+
+header{
+    height: 50px;
+    background-color: rgb(0, 183, 255);
+    display: flex;
+}
+
+.caption{
+    margin: auto 0;
+    font-size: 50px;
+}
+
+main{
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    background-color: cadetblue;
+}
+
+nav>ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav>ul>li{
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+}
+
+nav>ul>li:hover{
+    background-color: rgb(5, 247, 255);
+}
+
+.content{
+    flex: 5;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+

@@ -4,7 +4,7 @@
 
 <body>
 	<div class="content">
-		<div style="text-align: center;">Chi tiết tài khoản</div>
+		<div style="text-align: center;" class="caption-table">Chi tiết tài khoản</div>
 
 		<div>ID: ${TaiKhoan.id }</div>
 		<div>Tên đăng nhập: ${TaiKhoan.tenDangNhap }</div>

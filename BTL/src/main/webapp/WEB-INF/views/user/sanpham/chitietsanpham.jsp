@@ -10,15 +10,17 @@
 	<div class="product-detail flex-container">
 		<div class="top flex-container">
 			<div class="left">
-				<img src="<c:url value='/assets/user/img/slides/${sanPham.hinhAnh }'/>" alt="">
+				<img src="<c:url value='/assets/user/img/sanpham/${sanPham.hinhAnh }'/>" alt="">
 			</div>
 			<div class="right">
-				<div class="product-name">${sanPham.tenSanPham }</div>
-				<div class="product-price">${sanPham.gia }</div>
-				<div class="product-price-sale">${sanPham.giaGiam }</div>
+				<div class="product-name">Tên sản phẩm: ${sanPham.tenSanPham }</div>
+				<br/>
+				<div class="product-price">Giá: ${sanPham.gia }</div>
 				<!-- <input type="number" name="quantity" id="quantity" min="1"
 					, value="1"> -->
-				<div class="button-add-to-cart button">Thêm vào giỏ hàng</div>
+				
+				<br/>
+				<a class="button-add-to-cart button" href="<c:url value='/ThemSanPham/${sanPham.maSanPham }'/>">Thêm vào giỏ hàng</a>
 			</div>
 		</div>
 		<div class="bottom">

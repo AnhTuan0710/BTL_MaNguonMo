@@ -1,0 +1,33 @@
+﻿CREATE DATABASE MIUMIUSHOP
+GO
+
+USE MIUMIUSHOP
+GO
+
+
+INSERT INTO SanPham VALUES(101, N'24 lon All Free vị lúa mạch 330ml', 'd1.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(102, N'6 lon nước All Free lúa mạch 330ml', 'd2.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(103, N'Nước có ga All Free lúa mạch 330ml', 'd3.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(104, N'Thùng 24 chai Mountain Dew 390ml', 'd4.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(105, N'6 chai nước Mountain Dew 390ml', 'd5.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(106, N'Nước ngọt Mountain Dew 390ml', 'd6.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(107, N'Trà xanh chanh TH True Tea 350ml', 'd7.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(108, N'6 chai nước hồng trà vải C2 455ml', 'd8.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(109, N'24 chai hồng trà vải C2 455ml', 'd9.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(110, N'Hồng trà vị vải C2 chai 455ml', 'd10.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(111, N'Thùng 12 chai Pepsi Cola 1.5 lít', 'd11.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(112, N'6 chai nước có gas Sprite 600ml', 'd12.jpg', 12000, 10000, 9999, N'mô tả đồ uống', GETDATE(), GETDATE(), 1, 1, 12)
+
+----------
+INSERT INTO SanPham VALUES(201, N'03 GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA + 2 LY PEPSI VỪA', 'a1.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 10)
+INSERT INTO SanPham VALUES(202, N'02 GÀ GIÒN VUI VẺ + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA + 2 LY PEPSI VỪA', 'a2.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 10)
+INSERT INTO SanPham VALUES(203, N'02 GÀ GIÒN VUI VẺ + 01 GÀ SỐT CAY + 01 MỲ Ý SỐT BÒ BẰM + 01 KHOAI TÂY CHIÊN VỪA + 2 LY PEPSI VỪA', 'a3.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 10)
+INSERT INTO SanPham VALUES(204, N'03 GÀ GIÒN VUI VẺ + 02 MỲ Ý SỐT BÒ BẰM + 01 KHOAI BBQ VỪA + 03 LY PEPSI VỪA', 'a4.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 10)
+INSERT INTO SanPham VALUES(205, N'01 MIẾNG GÀ GIÒN VUI VẺ + 01 MỲ Ý SỐT BÒ BẰM + 01 NƯỚC NGỌT (VỪA)', 'a5.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 10)
+
+INSERT INTO SanPham VALUES(206, N'SANDWICH GÀ GIÒN + NƯỚC NGỌT', 'a6.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(207, N'SANDWICH THỊT NƯỚNG BBQ + KHOAI TÂY + NƯỚC NGỌT', 'a7.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(208, N'SANDWICH THỊT NƯỚNG BBQ + NƯỚC NGỌT', 'a8.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(209, N'SANDWICH THỊT NƯỚNG BBQ', 'a9.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(210, N'SANDWICH GÀ GIÒN', 'a10.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
+INSERT INTO SanPham VALUES(211, N'SANDWICH GÀ GIÒN + NƯỚC NGỌT + KHOAI TÂY', 'a11.png', 12000, 10000, 9999, N'mô tả đồ ăn', GETDATE(), GETDATE(), 1, 1, 12)
